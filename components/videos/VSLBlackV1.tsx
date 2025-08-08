@@ -1,0 +1,46 @@
+import React from 'react';
+import Script from 'next/script';
+
+const VSLBlackV1 = () => {
+  return (
+    <div className="w-full rounded-3xl overflow-hidden">
+      <div id="vid_682a82f69a2f4feddf421113" style={{ position: 'relative', width: '100%', padding: '84.375% 0 0' }}>
+        <img 
+          id="thumb_682a82f69a2f4feddf421113" 
+          src="https://images.converteai.net/9e5adb60-2a6e-4137-97bb-0eaa0f5632d0/players/682a82f69a2f4feddf421113/thumbnail.jpg" 
+          style={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            width: '100%', 
+            height: '100%', 
+            objectFit: 'cover', 
+            display: 'block' 
+          }} 
+          alt="thumbnail" 
+        />
+        <div 
+          id="backdrop_682a82f69a2f4feddf421113" 
+          style={{ 
+            WebkitBackdropFilter: 'blur(5px)', 
+            backdropFilter: 'blur(5px)', 
+            position: 'absolute', 
+            top: 0, 
+            height: '100%', 
+            width: '100%' 
+          }}
+        />
+      </div>
+      <Script id="scr_682a82f69a2f4feddf421113" strategy="afterInteractive">
+        {`
+          var s=document.createElement("script");
+          s.src="https://scripts.converteai.net/9e5adb60-2a6e-4137-97bb-0eaa0f5632d0/players/682a82f69a2f4feddf421113/player.js";
+          s.async=!0;
+          document.head.appendChild(s);
+        `}
+      </Script>
+    </div>
+  );
+};
+
+export default VSLBlackV1;

