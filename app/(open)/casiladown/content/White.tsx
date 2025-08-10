@@ -40,19 +40,19 @@ export default function White() {
       <div className="w-full text-sm bg-red-600 text-white">
         <div className="mx-auto px-4 py-4">
           <div className="text-center font-semibold">
-            ¡Por favor, no cierre ni actualice esta página, ya que podrían ocurrir errores al pagar la tarifa!
+            Please do not close or refresh this page, as errors may occur when paying the fee!
           </div>
         </div>
       </div>
       <div className="flex flex-col w-full max-w-xl gap-6 px-5 py-6 mx-auto bg-gray-50">
         <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-white appear border-t px-5 py-6 -mb-5 border-gray-200">
           <div className="font-bold uppercase text-gray-900">
-            ¡Espera! Aprovecha este descuento exclusivo antes de cerrar esta ventana 👇
+            Wait! Take advantage of this exclusive discount before closing this window 👇
           </div>
           <div className="flex flex-col gap-3 rounded-xl border-2 border-dashed shadow-lg p-5 bg-white border-green-500">
-            <span className="font-semibold italic leading-none text-lg text-gray-900">AI 10X – Acelerador de productividad digital</span>
-            <span className="text-gray-700">Nuestra estrategia avanzada con inteligencia artificial para optimizar tu contenido oculto y multiplicar tu eficiencia en plataformas digitales. ⚙️🤖</span>
-            <span className="text-xs italic opacity-80">👉 Haz clic en el botón de abajo y activa tu acelerador de productividad ahora.</span>
+            <span className="font-semibold italic leading-none text-lg text-gray-900">AI 10X – Digital Productivity Accelerator</span>
+            <span className="text-gray-700">Our advanced strategy with artificial intelligence to scale your hidden content and automate your workflow like never before. ⚙️🤖</span>
+            <span className="text-xs italic opacity-80">👉 Click the button below and activate your productivity accelerator now.</span>
             
             {/* HOTMART - Sales Funnel Widget */}
             <div id="hotmart-sales-funnel"></div>

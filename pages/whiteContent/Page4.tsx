@@ -25,8 +25,8 @@ export default function Page4({
           />
         </div>
         <div className="flex flex-col gap-2 text-center">
-          <span className="text-lg font-semibold">¿Cuál es tu reacción cuando ves la portada de este vídeo?</span>
-          <span className="text-gray-600 text-sm">Seleccione la opción a continuación ⬇️</span>
+          <span className="text-lg font-semibold">What is your reaction when you see the thumbnail of this video?</span>
+          <span className="text-gray-600 text-sm">Select the option below ⬇️</span>
         </div>
         <div className="grid grid-cols-3 gap-4">
           <Option onClick={() => setPage(page + 1)}><Smile size={45} className="text-green-300" /></Option>

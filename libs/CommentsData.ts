@@ -2,154 +2,154 @@ export const CommentsData = [
   {
     avatar: "/comments/001.webp",
     name: "Sofia García",
-    time: "Hace 2 min",
+    time: "2 min ago",
     content:
-      "Chicos, ¡¡¡estoy impresionado!!! ¡Acabo de retirar 300 DOLARES y vine corriendo aquí para contártelo!",
+      "Guys, I'm so impressed!!! I just withdrew 300 DOLLARS and I came running here to tell you!",
   },
   {
     avatar: "/comments/002.webp",
     name: "Carlos Dal Belo",
-    time: "Hace 4 min",
+    time: "4 min ago",
     content:
-      "Llevo usando esta nueva herramienta de YouTube por 3 meses y desde entonces no he dejado de recibir transferencias todos los días, solo por ayudar a YouTube a analizar los anuncios que coloca en sus sitios web asociados. Estoy ganando unos 200 dólares al día como mínimo.",
+      "I've been using this new YouTube tool for 3 months and since then I haven't stopped receiving transfers every day, just by helping YouTube analyze the ads they place on their partner websites. I'm earning about 200 dollars a day minimum.",
   },
   {
     avatar: "/comments/003.webp",
     name: "María Acosta",
-    time: "Hace 12 min",
+    time: "12 min ago",
     content:
-      "estoy ganando tanto dinero con YouTube que voy a poder comprar mi motito nueva, pruébenlo gente porque realmente funciona...",
+      "I'm earning so much money with YouTube that I'm going to be able to buy my new motorcycle, try it people because it really works...",
   },
   {
     avatar: "/comments/004.webp",
     name: "Bernardo Torres",
-    time: "Hace 13 min",
-    content: "Honestamente no sé cómo podría agradecerles, ¡acabo de retirar $200 en solo unos minutos!",
+    time: "13 min ago",
+    content: "Honestly I don't know how I could thank you, I just withdrew $200 in just a few minutes!",
   },
   {
     avatar: "/comments/005.webp",
     name: "Andrés Fernández",
-    time: "Hace 25 min",
+    time: "25 min ago",
     content:
-      "¡Hola a todos! Súper recomiendo esta nueva herramienta de YouTube, es perfecta. El dinero cae en la cuenta al instante, ¡Dioooos mío, Maravillooosooo! Gracias, YouTube 🤑💰",
+      "Hello everyone! I super recommend this new YouTube tool, it's perfect. The money falls into the account instantly, Oh my Gooood, Wonderfullll! Thank you, YouTube 🤑💰",
   },
   {
     avatar: "/comments/006.webp",
     name: "Martina Lopez",
-    time: "Hace 35 min",
+    time: "35 min ago",
     content:
-      "Vi el video completo y la plata cayó rapidito a mi cuenta. Es una gran oportunidad para ganar dinero extra.",
+      "I watched the complete video and the money fell quickly into my account. It's a great opportunity to earn extra money.",
   },
   {
     avatar: "/comments/007.webp",
     name: "Julio Alvarenga",
-    time: "Hace 38 min",
+    time: "38 min ago",
     content:
-      "Pensé que sería puro cuento, pero ya recibí mis primeros 100 dólares. Estoy muy contento con los resultados.",
+      "I thought it would be pure fiction, but I already received my first 100 dollars. I'm very happy with the results.",
   },
   {
     avatar: "/comments/008.webp",
     name: "Hanna Larissa",
-    time: "Hace 43 min",
+    time: "43 min ago",
     content:
-      "Gente, no me tomó mucho tiempo aprender. Siguiendo el video paso a paso, empecé a generar ingresos casi de inmediato.",
+      "Guys, it didn't take me long to learn. Following the video step by step, I started generating income almost immediately.",
   },
   {
     avatar: "/comments/009.webp",
     name: "Ricardo López",
-    time: "Hace 47 min",
+    time: "47 min ago",
     content:
-      "Necesitaba un dinero extra para ayudar en casa, y con esta herramienta de YouTube por fin lo logré. ¡Mil gracias!",
+      "I needed extra money to help at home, and with this YouTube tool I finally achieved it. A thousand thanks!",
   },
   {
     avatar: "/comments/010.webp",
     name: "Leticia Cruz",
-    time: "Hace 52 min",
+    time: "52 min ago",
     content:
-      "No soy muy bueno con la tecnología, pero seguí las instrucciones y funcionó de inmediato. Esto sí que es increíble.",
+      "I'm not very good with technology, but I followed the instructions and it worked immediately. This is really incredible.",
   },
   {
     avatar: "/comments/011.webp",
     name: "Samuel Ríos",
-    time: "Hace 1h",
+    time: "1h ago",
     content:
-      "Tengo un empleo de medio tiempo, y esta herramienta me está generando más dinero que mi trabajo principal.",
+      "I have a part-time job, and this tool is generating more money for me than my main job.",
   },
   {
     avatar: "/comments/012.webp",
     name: "Julieta Navarro",
-    time: "Hace 1h",
+    time: "1h ago",
     content:
-      "Ya pude ahorrar lo suficiente para comprarle un regalo a mi mamá. Nunca había visto algo tan sencillo.",
+      "I was able to save enough to buy a gift for my mom. I had never seen anything so simple.",
   },
   {
     avatar: "/comments/013.webp",
     name: "Esteban Silva",
-    time: "Hace 1h",
+    time: "1h ago",
     content:
-      "Empecé apenas ayer y ya hice 50 dólares. Es un alivio enorme para mis gastos mensuales.",
+      "I started just yesterday and I already made 50 dollars. It's a huge relief for my monthly expenses.",
   },
   {
     avatar: "/comments/014.webp",
     name: "Valentina Pérez",
-    time: "Hace 2h",
+    time: "2h ago",
     content:
-      "Conocí este método por un amigo y superó mis expectativas. La verdad es que sí funciona.",
+      "I learned about this method from a friend and it exceeded my expectations. The truth is that it works.",
   },
   {
     avatar: "/comments/015.webp",
     name: "Francisco Gómez",
-    time: "Hace 2h",
+    time: "2h ago",
     content:
-      "Ahorré toda la semana y pude comprar mi primer celular nuevo. Todo gracias a esta herramienta de YouTube.",
+      "I saved all week and was able to buy my first new cell phone. All thanks to this YouTube tool.",
   },
   {
     avatar: "/comments/016.webp",
     name: "Ana Beltrán",
-    time: "Hace 2h",
+    time: "2h ago",
     content:
-      "tenía temor de perder tiempo, pero me sorprendí: recibo pagos prácticamente todos los días.",
+      "I was afraid of wasting time, but I was surprised: I receive payments practically every day.",
   },
   {
     avatar: "/comments/017.webp",
     name: "Silvio Romero",
-    time: "Hace 3h",
+    time: "3h ago",
     content:
-      "Lo mejor de todo es que no hay que invertir dinero, solamente ver el video y seguir los pasos. ¡Genial!",
+      "The best of all is that you don't have to invest money, just watch the video and follow the steps. Great!",
   },
   {
     avatar: "/comments/018.webp",
     name: "Emilia Quintero",
-    time: "Hace 3h",
+    time: "3h ago",
     content:
-      "Sinceramente, dudaba, pero no me arrepiento. Mi hermano y yo estamos obteniendo ingresos adicionales sin complicaciones.",
+      "Honestly, I doubted, but I don't regret it. My brother and I are getting additional income without complications.",
   },
   {
     avatar: "/comments/019.webp",
     name: "Sarah Santoro",
-    time: "Hace 3h",
+    time: "3h ago",
     content:
-      "Al principio no creía, pero ahora me arrepiento de no haber empezado antes. Recibo depósitos en mi cuenta cada día.",
+      "At first I didn't believe it, but now I regret not having started earlier. I receive deposits in my account every day.",
   },
   {
     avatar: "/comments/020.webp",
     name: "Daniela Benítez",
-    time: "Hace 4h",
+    time: "4h ago",
     content:
-      "¿Qué esperan? Yo vi el video hasta el final y en menos de 24 horas ya tenía la plata en mi cuenta. ¡Una maravilla!",
+      "What are you waiting for? I watched the video to the end and in less than 24 hours I already had the money in my account. A marvel!",
   },
   {
     avatar: "/comments/021.webp",
     name: "Katy Willams",
-    time: "Hace 4h",
+    time: "4h ago",
     content:
-      "dios mío, ¡acabo de pagar mis deudas en una semana usando esta herramienta!",
+      "Oh my god, I just paid off my debts in a week using this tool!",
   },
   {
     avatar: "/comments/022.webp",
     name: "James J. Hernandez",
-    time: "Hace 4h",
+    time: "4h ago",
     content:
-      "Amigoos, ni siquiera puedo imaginar que esta herramienta realmente funcione, ¡hoy gané $358 con ella! ¡Hazte la prueba lo antes posible!",
+      "Guys, I can't even imagine that this tool really works, today I earned $358 with it! Get tested as soon as possible!",
   },
 ];

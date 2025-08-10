@@ -25,8 +25,8 @@ export default function Page5({
           />
         </div>
         <div className="flex flex-col gap-2 text-center">
-          <span className="text-lg font-semibold">¿La portada de este video te da ganas de ver el video?</span>
-          <span className="text-gray-600 text-sm">Seleccione la opción a continuación ⬇️</span>
+          <span className="text-lg font-semibold">Does the thumbnail of this video make you want to watch the video?</span>
+          <span className="text-gray-600 text-sm">Select the option below ⬇️</span>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <Option onClick={() => setPage(page + 1)}><ThumbsUp size={45} className="text-green-300" /></Option>

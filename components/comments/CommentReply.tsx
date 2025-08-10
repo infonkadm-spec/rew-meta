@@ -27,8 +27,8 @@ export default function CommentReply({
         </div>
         <p className="text-gray-600 text-xs sm:text-sm mt-0.5 tracking-normal">{content}</p>
         <div className="flex space-x-1 mt-2 text-[9px] text-[#3A559F]">
-          <button type="button" className="hover:underline">Responder</button>
-          <button type="button" className="hover:underline">· Me gusta</button>
+          <button type="button" className="hover:underline">Reply</button>
+          <button type="button" className="hover:underline">· Like</button>
           <span className="text-gray-500">· {time}</span>
         </div>
       </div>

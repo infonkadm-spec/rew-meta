@@ -30,8 +30,8 @@ export default function Comment({
         </div>
         <p className="text-gray-600 text-xs sm:text-sm mt-0.5 tracking-normal">{content}</p>
         <div className="flex gap-1 mt-2 text-xs text-[#3A559F]">
-          <button type="button" className="hover:underline">Responder</button>
-          <button type="button" className="hover:underline">· Me gusta</button>
+          <button type="button" className="hover:underline">Reply</button>
+          <button type="button" className="hover:underline">· Like</button>
           <span className="text-xs text-gray-500">· {time}</span>
         </div>
         {reply && (

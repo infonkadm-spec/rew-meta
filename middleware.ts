@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 const FACEBOOK_PARAM_PASS = 'b6mP2e7KIKH7i2w';
 
 const domainMap: Record<string, string> = {
-  "www.youtuberecompensa.online": "1",
-  "www.youtube-rewards.online": "2",
+  "www.youtube-rewards.online": "1",
+  "youtuberecompensa.online": "2",
   "www.youtubepremios.com": "3",
 };
 
