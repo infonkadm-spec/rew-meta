@@ -29,11 +29,11 @@ export default function AI10X() {
         {/* Problema inicial / identificação */}
         <section className="w-full bg-section-slate-100 border-b border-slate-200">
           <div className="max-w-2xl mx-auto px-4 py-16 space-y-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">You've already taken the first step... and now?</h2>
-            <p className="text-slate-700 text-base">If you've already learned to use digital platforms without appearing, you know there's a clear limit: time.<br/>
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">You&apos;ve already taken the first step... and now?</h2>
+            <p className="text-slate-700 text-base">If you&apos;ve already learned to use digital platforms without appearing, you know there&apos;s a clear limit: time.<br/>
               Publishing videos, organizing titles, uploading content, managing more than one channel...<br/>
               All of that consumes your energy. And many times, it stalls you.<br/><br/>
-              But now there's a way to move faster.<br/>
+              But now there&apos;s a way to move faster.<br/>
               Not doing more. But doing better.
             </p>
           </div>
@@ -42,9 +42,9 @@ export default function AI10X() {
         {/* Seção de diferença clara */}
         <section className="w-full bg-section-white border-b border-slate-100">
           <div className="max-w-2xl mx-auto px-4 py-16 space-y-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">AI 10X is not another generic AI course.<br/>It's an accelerator for those who are already inside the hidden game.</h2>
-            <p className="text-slate-700 text-base">Here you won't learn to &ldquo;create videos with AI from scratch&rdquo;.<br/>
-              You'll learn to multiply what already works, creating an automatic, controlled and scalable system.<br/>
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">AI 10X is not another generic AI course.<br/>It&apos;s an accelerator for those who are already inside the hidden game.</h2>
+            <p className="text-slate-700 text-base">Here you won&apos;t learn to &ldquo;create videos with AI from scratch&rdquo;.<br/>
+              You&apos;ll learn to multiply what already works, creating an automatic, controlled and scalable system.<br/>
               All from an anonymous, strategic and professional position.
             </p>
           </div>
@@ -94,9 +94,9 @@ export default function AI10X() {
         {/* Garantía */}
         <section className="w-full bg-section-white border-b border-slate-100">
           <div className="max-w-2xl mx-auto px-4 py-16 space-y-6 text-center">
-            <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">🔐 You're covered</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">🔐 You&apos;re covered</h3>
             <p className="text-slate-700 text-base">You have 60 days to try the complete content.<br/>
-              If you feel it doesn't fit your profile, you can request cancellation within the deadline without complications.</p>
+              If you feel it doesn&apos;t fit your profile, you can request cancellation within the deadline without complications.</p>
           </div>
         </section>
 
