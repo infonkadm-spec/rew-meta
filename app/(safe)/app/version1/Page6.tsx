@@ -17,14 +17,15 @@ export default function Page6() {
   const userHost = userLayer.host;
 
   // SET CONTENT DATA
-  const videoId = "682a82f69a2f4feddf421113";
+  const videoIdA = "682a82f69a2f4feddf421113"; // A
+  const videoIdB = "682a82f69a2f4feddf421113"; // B - usando o mesmo ID temporariamente
   const backLink = `https://${userHost}/promo`;
 
   // VIDEO VERIFY
   useEffect(() => {
     if (!visible) {
       const intervalId = setInterval(() => {
-        const storedTime = localStorage.getItem(videoId);
+        const storedTime = localStorage.getItem(videoIdA);
         const storedVideoTime = storedTime ? Number(storedTime) : 0;
         if (storedVideoTime > 850) {
           setVisible(true);
@@ -32,7 +33,7 @@ export default function Page6() {
       }, 1000);
       return () => clearInterval(intervalId);
     }
-  }, [videoId, visible]);
+  }, [videoIdA, visible]);
 
   // BACK REDIRECT
   useEffect(() => {
@@ -67,7 +68,12 @@ export default function Page6() {
       </div>
       <div className="flex items-center flex-col gap-1 relative -mt-4">
         <VSLBlackV1 />
-        <AlertBoxUrgente targetSeconds={885} />
+        <AlertBoxUrgente
+          videoIdA={videoIdA}
+          videoIdB={videoIdB}
+          thresholdASeconds={885}
+          thresholdBSeconds={885}
+        />
       </div>
       {!visible && (
         <div className="text-sm text-center p-2">
