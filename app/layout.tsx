@@ -13,8 +13,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Una nueva habilidad...",
-  description: "Descubre cómo personas comunes...",
+  title: "A new skill...",
+  description: "Discover how ordinary people...",
 };
 
 export default async function RootLayout({
@@ -26,7 +26,7 @@ export default async function RootLayout({
   const isLocalHost = hdrs.get("x-domain-id") === "0";
 
   return (
-    <html lang="es">
+    <html lang="en">
       {!isLocalHost && (
         <head>
           <Analytics />

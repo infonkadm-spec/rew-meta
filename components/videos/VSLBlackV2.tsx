@@ -7,7 +7,7 @@ const VSLBlackV2 = () => {
   useEffect(() => {
     if (playerRef.current && !playerRef.current.querySelector('vturb-smartplayer')) {
       const el = document.createElement('vturb-smartplayer');
-      el.id = 'ab-6897f162d7302addde0997dd';
+      el.id = 'ab-689e11961016d6bdb6f4a765';
       el.style.display = 'block';
       el.style.margin = '0 auto';
       el.style.width = '100%';
@@ -18,10 +18,10 @@ const VSLBlackV2 = () => {
   return (
     <div className="w-full rounded-3xl overflow-hidden">
       <div ref={playerRef}></div>
-      <Script id="vturb-ab-6897f162d7302addde0997dd" strategy="afterInteractive">
+      <Script id="vturb-ab-689e11961016d6bdb6f4a765" strategy="afterInteractive">
         {`
           var s=document.createElement("script");
-          s.src="https://scripts.converteai.net/9e5adb60-2a6e-4137-97bb-0eaa0f5632d0/ab-test/6897f162d7302addde0997dd/player.js";
+          s.src="https://scripts.converteai.net/9e5adb60-2a6e-4137-97bb-0eaa0f5632d0/ab-test/689e11961016d6bdb6f4a765/player.js";
           s.async=!0;
           document.head.appendChild(s);
         `}

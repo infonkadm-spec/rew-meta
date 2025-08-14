@@ -1,12 +1,49 @@
-import React from 'react';
-import { useVturbVideoTime } from '@/hooks/useVturbVideoTime';
+import React, { useEffect } from 'react';
+import { useVturbAbVideoTime } from '@/hooks/useVturbAbVideoTime';
 
 interface AlertBoxUrgenteProps {
-  targetSeconds?: number;
+  videoIdA: string;
+  videoIdB: string;
+  thresholdASeconds?: number;
+  thresholdBSeconds?: number;
 }
 
-const AlertBoxUrgente: React.FC<AlertBoxUrgenteProps> = ({ targetSeconds = 885 }) => {
-  const show = useVturbVideoTime(targetSeconds);
+const AlertBoxUrgente: React.FC<AlertBoxUrgenteProps> = ({
+  videoIdA,
+  videoIdB,
+  thresholdASeconds = 573,
+  thresholdBSeconds = 702,
+}) => {
+  const show = useVturbAbVideoTime(
+    videoIdA,
+    videoIdB,
+    thresholdASeconds,
+    thresholdBSeconds
+  );
+
+  // Debug logs
+  useEffect(() => {
+    console.log('AlertBoxUrgente Props:', {
+      videoIdA,
+      videoIdB,
+      thresholdASeconds,
+      thresholdBSeconds
+    });
+    
+    // Monitorar localStorage
+    const checkStorage = () => {
+      const timeA = localStorage.getItem(videoIdA);
+      const timeB = localStorage.getItem(videoIdB);
+      console.log('Storage Times:', { timeA, timeB });
+    };
+    
+    const interval = setInterval(checkStorage, 1000);
+    return () => clearInterval(interval);
+  }, [videoIdA, videoIdB, thresholdASeconds, thresholdBSeconds]);
+
+  useEffect(() => {
+    console.log('AlertBoxUrgente show state:', show);
+  }, [show]);
 
   if (!show) return null;
 
@@ -37,7 +74,7 @@ const AlertBoxUrgente: React.FC<AlertBoxUrgenteProps> = ({ targetSeconds = 885 }
         🔐
       </span>
       <span>
-        El sistema cerrará tu acceso si no confirmas ahora. YouTube solo mantiene activas solicitudes con retorno inmediato.
+        The system will close your access if you do not confirm now. YouTube only maintains active requests with immediate return.
       </span>
     </div>
   );

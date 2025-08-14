@@ -44,17 +44,43 @@ export default function White() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-xl gap-6 px-5 py-6 mx-auto bg-gray-50">
+      <div className="flex flex-col w-full max-w-4xl gap-6 px-5 py-6 mx-auto bg-gray-50">
         <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-white appear border-t px-5 py-6 -mb-5 border-gray-200">
-          <div className="font-bold uppercase text-gray-900">
-            Access the exclusive value available only on this page!
-          </div>
-          <div className="flex flex-col gap-3 rounded-xl border-2 border-dashed shadow-lg p-5 bg-white border-green-500">
-            <span className="font-semibold italic leading-none text-lg text-gray-900">Virtual Assistant for Processes</span>
-            <span className="text-gray-700">
-              Automate repetitive tasks and organize your entire workflow with simple and effective tools. Simplify your daily operation without losing time or energy. Ideal for those who want to scale with structure and clarity. ⚙️🤖
+          <div className="space-y-4">
+            <span className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              Content Flow Mastery™
             </span>
-            <span className="text-xs italic opacity-80">👉 Click the button below and activate your virtual assistant now.</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Assisted Creation & Smart Processes
+            </h1>
+            <p className="text-lg text-gray-600 font-light">
+              Produce more, with less friction.
+            </p>
+            <p className="text-base text-gray-700">
+              Rely on digital assistants and semi-automated flows to turn ideas into ready-to-publish pieces while keeping your voice and standards.
+            </p>
+          </div>
+          
+          <div className="flex flex-col gap-3 rounded-xl border-2 border-dashed shadow-lg p-5 bg-gradient-to-br from-blue-50 to-purple-50 border-blue-500">
+            <span className="font-semibold text-lg text-gray-900">Includes:</span>
+            <div className="space-y-3 text-left">
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Assisted generation of ideas, text, and visuals.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Flows for versions and variations without duplicated work.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Practical integration into your routine — no tech overwhelm.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Support tools. Does not replace authorship or guarantee results.</span>
+              </div>
+            </div>
             
             {/* HOTMART - Sales Funnel Widget */}
             <div id="hotmart-sales-funnel"></div>

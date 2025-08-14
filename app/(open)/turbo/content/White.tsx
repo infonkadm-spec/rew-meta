@@ -44,17 +44,44 @@ export default function White() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-xl gap-6 px-5 py-6 mx-auto bg-gray-50">
+      <div className="flex flex-col w-full max-w-4xl gap-6 px-5 py-6 mx-auto bg-gray-50">
         <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-white appear border-t px-5 py-6 -mb-5 border-gray-200">
-          <div className="font-bold uppercase text-gray-900">
-            Access the exclusive value available only on this page!
+          <div className="space-y-4">
+            <span className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              Content Flow Mastery™
+            </span>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Publishing & Scale
+            </h1>
+            <p className="text-lg text-gray-600 font-light">
+              Turn your production into a sustainable system.
+            </p>
+            <p className="text-base text-gray-700">
+              Batch-schedule, measure what matters, and adjust with ease to maintain long-term consistency.
+            </p>
           </div>
-          <div className="flex flex-col gap-3 rounded-xl border-2 border-dashed shadow-lg p-5 bg-white border-green-500">
-            <span className="font-semibold italic leading-none text-lg text-gray-900">Advanced Resources Activation</span>
-            <span className="text-gray-700">Unlock templates, tools and exclusive resources to optimize your channel.
-                                            Save hours of work and execute with more precision in each step.
-                                            Access the best in digital productivity for anonymous creators. ⚙️🤖</span>
-            <span className="text-xs italic opacity-80">👉 Click the button below and activate your virtual assistant now.</span>
+          
+          <div className="flex flex-col gap-3 rounded-xl border-2 border-dashed shadow-lg p-5 bg-gradient-to-br from-blue-50 to-purple-50 border-blue-500">
+            <span className="font-semibold text-lg text-gray-900">Includes:</span>
+            <div className="space-y-3 text-left">
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Batch production and early scheduling.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Key metrics to review and improve.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-gray-700">Organization to sustain a professional pace.</span>
+              </div>
+            </div>
+            <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+              <p className="text-sm text-yellow-800 font-medium">
+                Educational program. Does not guarantee growth or results.
+              </p>
+            </div>
             
             {/* HOTMART - Sales Funnel Widget */}
             <div id="hotmart-sales-funnel"></div>

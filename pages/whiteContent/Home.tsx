@@ -45,18 +45,18 @@ export default function Home() {
               <img src="/logo you.png" alt="Logo" className="h-12 w-auto" />
             </div>
             <p className="text-xs text-slate-500">
-              Este curso no garantiza resultados financieros de ningún tipo. El contenido aquí compartido tiene fines exclusivamente educativos y busca enseñar habilidades digitales relacionadas con plataformas digitales. Cualquier resultado económico dependerá única y exclusivamente de la aplicación individual, el esfuerzo personal y factores externos que no pueden ser controlados. No vendemos fórmulas mágicas ni prometemos ingresos rápidos. Por favor, utiliza este material con responsabilidad y sentido crítico.
+            This course does not guarantee financial results of any kind. The content shared here is for educational purposes only and seeks to teach digital skills related to digital platforms. Any financial results will depend solely and exclusively on individual application, personal effort, and external factors beyond one's control. We do not sell magic formulas or promise quick returns. Please use this material responsibly and with a critical eye.
             </p>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-slate-600">
-              <a href="/contacto" className="hover:underline">Contacto</a>
+              <a href="/contact" className="hover:underline">Contact</a>
               <span>|</span>
-              <a href="/terminos" className="hover:underline">Términos de Uso</a>
+              <a href="/terms" className="hover:underline">Terms of Use</a>
               <span>|</span>
-              <a href="/descargo" className="hover:underline">Descargo de Responsabilidad</a>
+              <a href="/disclaimer" className="hover:underline">Disclaimer</a>
               <span>|</span>
-              <a href="/privacidad" className="hover:underline">Política de Privacidad</a>
+              <a href="/privacy" className="hover:underline">Privacy Policy</a>
               <span>|</span>
-              <a href="/reembolso" className="hover:underline">Política de Reembolso</a>
+              <a href="/refund" className="hover:underline">Refund Policy</a>
             </nav>
           </div>
         </footer>

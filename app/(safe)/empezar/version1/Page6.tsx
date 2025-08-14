@@ -1,7 +1,7 @@
 import Comments from "@/components/Comments";
 import VSLBlackV2 from "@/components/videos/VSLBlackV2";
 import PixelV2 from "@/components/pixels/PixelV2";
-import PlacesAlert from '@/components/PlacesAlert';
+//import PlacesAlert from '@/components/PlacesAlert';
 import AlertBoxUrgente from "@/components/AlertBoxUrgente";
 import { useLayer } from '@/context/LayerProvider';
 import { useEffect, useState } from 'react';
@@ -16,23 +16,16 @@ export default function Page6() {
   // USER LAYER DATA
   const userHost = userLayer.host;
 
-  // SET CONTENT DATA
-  const videoId = "682a850baace17974e9f7905";
+  // SET CONTENT DATA (A/B IDs)
+  const videoIdA = "689e0b6e571adb1a2d9e7938"; // A
+  const videoIdB = "6897ea82c587359810f9bc7c"; // B
   const backLink = `https://${userHost}/promo`;
 
-  // VIDEO VERIFY
+  // VIDEO VERIFY (A=573s, B=702s)
   useEffect(() => {
-    if (!visible) {
-      const intervalId = setInterval(() => {
-        const storedTime = localStorage.getItem(videoId);
-        const storedVideoTime = storedTime ? Number(storedTime) : 0;
-        if (storedVideoTime > 850) {
-          setVisible(true);
-        }
-      }, 1000);
-      return () => clearInterval(intervalId);
-    }
-  }, [videoId, visible]);
+    // Removida a lógica duplicada de verificação de tempo
+    // O AlertBoxUrgente agora controla isso através do hook useVturbAbVideoTime
+  }, []);
 
   // BACK REDIRECT
   useEffect(() => {
@@ -63,11 +56,16 @@ export default function Page6() {
         <span className="text-base sm:text-2xl font-semibold tracking-tight">
           🚨 ATTENTION! Watch the video to the end to understand how to withdraw your available balance. ⬇️
         </span>
-        <PlacesAlert />
+        {/*<PlacesAlert />*/}
       </div>
       <div className="flex items-center flex-col gap-1 relative -mt-4">
         <VSLBlackV2 />
-        <AlertBoxUrgente targetSeconds={885} />
+        <AlertBoxUrgente
+          videoIdA={videoIdA}
+          videoIdB={videoIdB}
+          thresholdASeconds={573}
+          thresholdBSeconds={702}
+        />
       </div>
       {!visible && (
         <div className="text-sm text-center p-2">
