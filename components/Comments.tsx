@@ -1,5 +1,6 @@
 import { CommentsData } from '../libs/CommentsData';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Comments() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,9 +54,11 @@ export default function Comments() {
       </div>
       <div className={`p-4 ${progress < 97 && 'appear'}`}>
         <div className="flex items-start gap-3 mb-4">
-          <img
+          <Image
             src={comment.avatar}
             alt={comment.name}
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-full object-cover"
           />
           <div>

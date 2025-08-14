@@ -92,7 +92,7 @@ export default function MainPage() {
           >
             <p className="text-lg text-slate-800">
               If any of this resonates, <strong>Starter Pass was designed for you</strong>. 
-              This is not a magic results promise; it's a clear structure to move forward without chaos.
+              This is not a magic results promise; it&apos;s a clear structure to move forward without chaos.
             </p>
           </motion.div>
         </div>

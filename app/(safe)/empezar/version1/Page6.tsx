@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 export default function Page6() {
   // COMPONENT STATES
-  const [visible, setVisible] = useState<boolean>(false);
+  const [visible] = useState<boolean>(false);
 
   // IMPORT CONTEXT DATA
   const userLayer = useLayer();

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Privacidad() {
   return (
@@ -62,7 +63,7 @@ export default function Privacidad() {
       <footer className="w-full bg-slate-100 border-t border-slate-200 mt-8 py-8 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <div className="flex justify-center mb-4">
-            <img src="/logo you.png" alt="Logo" className="h-12 w-auto" />
+            <Image src="/logo you.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
           </div>
           <p className="text-xs text-slate-500">
             Este curso no garantiza resultados financieros de ningún tipo. El contenido aquí compartido tiene fines exclusivamente educativos y busca enseñar habilidades digitales relacionadas con plataformas digitales. Cualquier resultado económico dependerá única y exclusivamente de la aplicación individual, el esfuerzo personal y factores externos que no pueden ser controlados. No vendemos fórmulas mágicas ni prometemos ingresos rápidos. Por favor, utiliza este material con responsabilidad y sentido crítico.

@@ -54,7 +54,7 @@ export default function White() {
               Strategy & Engagement
             </h1>
             <p className="text-lg text-gray-600 font-light">
-              From "posting just to post" to creating with intent.
+              From &quot;posting just to post&quot; to creating with intent.
             </p>
             <p className="text-base text-gray-700">
               Design pieces that capture attention and encourage interaction — without aggressive tactics.

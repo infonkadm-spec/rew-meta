@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image';
+
 export default function AI10X() {
   return (
     <>
@@ -115,7 +117,7 @@ export default function AI10X() {
       <footer className="w-full bg-slate-100 border-t border-slate-200 mt-8 py-8 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <div className="flex justify-center mb-4">
-            <img src="/logo you.png" alt="Logo" className="h-12 w-auto" />
+            <Image src="/logo you.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
           </div>
           <p className="text-xs text-slate-500">
             This course does not guarantee any type of financial results. The content shared here is for educational purposes only and seeks to teach digital skills related to digital platforms. Any economic result will depend solely and exclusively on individual application, personal effort and external factors that cannot be controlled. We do not sell magic formulas or promise quick income. Please use this material responsibly and with critical thinking.
