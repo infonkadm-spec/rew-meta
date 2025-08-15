@@ -1,5 +1,5 @@
 import White from "./content/White";
-//import Black from "./content/Black";
+import Black from "./content/Black";
 import { getUserLayer } from "@/utils/ContentFilter";
 
 export default async function Page() {
@@ -13,5 +13,5 @@ export default async function Page() {
   }
 
   // BLACK CONTENT
-  return <White />;
+  return <Black />;
 } 
