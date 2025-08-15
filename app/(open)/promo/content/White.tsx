@@ -51,7 +51,7 @@ export default function White() {
               If this is your moment, we&apos;re ready to welcome you on the other side.
             </div>
             <a
-              href="https://pay.hotmart.com/V101200307F?off=t6b7icez&checkoutMode=10"
+              href="https://pay.hotmart.com/K101259508B?off=knovnz2g&checkoutMode=10"
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105 text-lg mt-4"
               target="_blank" rel="noopener noreferrer"
             >

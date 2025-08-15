@@ -51,7 +51,7 @@ export default function MainPage() {
             </div>
             <button
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105"
-              onClick={() => window.open("https://pay.hotmart.com/V101200307F?off=aphu9vik&checkoutMode=10", "_blank")}
+              onClick={() => window.open("https://pay.hotmart.com/K101259508B?off=di9rzt2l&checkoutMode=10", "_blank")}
             >
               Get Starter Pass Now
             </button>
@@ -255,7 +255,7 @@ export default function MainPage() {
           </p>
           <button
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105"
-            onClick={() => window.open("https://pay.hotmart.com/V101200307F?off=aphu9vik&checkoutMode=10", "_blank")}
+            onClick={() => window.open("https://pay.hotmart.com/K101259508B?off=di9rzt2l&checkoutMode=10", "_blank")}
           >
             Get Starter Pass Now
           </button>
