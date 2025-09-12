@@ -2,7 +2,7 @@ import Comments from "@/components/Comments";
 import VSLBlackV2 from "@/components/videos/VSLBlackV2";
 import PixelV2 from "@/components/pixels/PixelV2";
 //import PlacesAlert from '@/components/PlacesAlert';
-import AlertBoxUrgente from "@/components/AlertBoxUrgente";
+//import AlertBoxUrgente from "@/components/AlertBoxUrgente";
 import { useLayer } from '@/context/LayerProvider';
 import { useEffect, useState } from 'react';
 
@@ -17,8 +17,8 @@ export default function Page6() {
   const userHost = userLayer.host;
 
   // SET CONTENT DATA (A/B IDs)
-  const videoIdA = "68c35f645dfbf05254f3a8a1"; // A
-  const videoIdB = "68c35f645dfbf05254f3a8a1"; // B
+  // const videoIdA = "68c35f645dfbf05254f3a8a1"; // A
+  // const videoIdB = "68c35f645dfbf05254f3a8a1"; // B
   const backLink = `https://${userHost}/promo`;
 
   // VIDEO VERIFY (A=573s, B=702s)
