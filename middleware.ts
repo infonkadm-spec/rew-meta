@@ -4,7 +4,7 @@ const FACEBOOK_PARAM_PASS = 'b6mP2e7KIKH7i2w';
 
 const domainMap: Record<string, string> = {
   "www.youtube-rewards.online": "1",
-  "youtuberecompensa.online": "2",
+  "en.cashinyourwallet.app": "2",
   "www.youtubepremios.com": "3",
 };
 
