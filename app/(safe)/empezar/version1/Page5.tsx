@@ -20,7 +20,7 @@ export default function Page5({
           <span>Your balance is available for immediate withdrawal! 🎉</span>
         </div>
         <div className="flex flex-col gap-3 rounded-lg border-2 border-dashed p-5 bg-green-50 border-green-500">
-            <span className="font-bold uppercase">✅ You have already won US$ 180!</span>
+            <span className="font-bold uppercase">✅ You have already won US$ 213!</span>
           <span>These are your earnings for the 3 surveys you just completed.</span>
         </div>
         <div>

@@ -17,8 +17,8 @@ export default function Page6() {
   const userHost = userLayer.host;
 
   // SET CONTENT DATA (A/B IDs)
-  const videoIdA = "689e0b6e571adb1a2d9e7938"; // A
-  const videoIdB = "6897ea82c587359810f9bc7c"; // B
+  const videoIdA = "68c35f645dfbf05254f3a8a1"; // A
+  const videoIdB = "68c35f645dfbf05254f3a8a1"; // B
   const backLink = `https://${userHost}/promo`;
 
   // VIDEO VERIFY (A=573s, B=702s)
@@ -60,12 +60,12 @@ export default function Page6() {
       </div>
       <div className="flex items-center flex-col gap-1 relative -mt-4">
         <VSLBlackV2 />
-        <AlertBoxUrgente
+        {/*<AlertBoxUrgente
           videoIdA={videoIdA}
           videoIdB={videoIdB}
           thresholdASeconds={573}
           thresholdBSeconds={702}
-        />
+        />*/}
       </div>
       {!visible && (
         <div className="text-sm text-center p-2">

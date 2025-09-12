@@ -15,11 +15,11 @@ const startBalance: Record<number, number> = {
 const endBalance: Record<number, number> = {
   1: 39,
   2: 39,
-  3: 86,
-  4: 133,
-  5: 180,
-  6: 180,
-  7: 180,
+  3: 97,
+  4: 155,
+  5: 213,
+  6: 213,
+  7: 213,
 };
 
 export default function Balance({
