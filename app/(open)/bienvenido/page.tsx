@@ -26,7 +26,7 @@ export default async function Page() {
             <p>You will receive an email with the title: <br /><strong>&ldquo;Your access was released&rdquo;</strong>.</p>
             <p>Don&apos;t forget to check your spam or trash folder, some emails may end up there by mistake.</p>
             <p>If you have any questions or difficulties accessing, <u>send an email to our support</u>:</p>
-            <p> - <strong className="text-green-600 hover:underline"><Link href="mailto:soporte@tarifadeinscripcion.online">soporte@tarifadeinscripcion.online</Link></strong></p>
+            <p> - <strong className="text-green-600 hover:underline"><Link href="mailto:funilcontactsup@gmail.com">funilcontactsup@gmail.com</Link></strong></p>
             <p>We will respond immediately and help you with everything you need.</p>
             <p>A strong hug, see you on the platform to start studying!</p>
           </div>
