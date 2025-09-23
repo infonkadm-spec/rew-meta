@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import VSLWhite from "@/components/videos/VSLWhite";
 import { useState } from 'react';
 
 export default function MainPage() {
@@ -21,7 +22,9 @@ export default function MainPage() {
             <p className="text-2xl md:text-3xl text-slate-600 max-w-3xl mx-auto font-light">
               Learn exactly how to start and grow a faceless YouTube channel that can earn six-figures.
             </p>
-            <img src="coursesales-image1.png" alt="Course Sales Image" className="mx-auto" />
+            <div className="max-w-md mx-auto">
+              <VSLWhite />
+            </div>
             <button
               className="inline-flex items-center justify-center rounded-lg bg-red-600 px-8 py-4 text-white font-medium shadow-sm hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition"
               onClick={() => window.open("https://pay.hotmart.com/K101259508B?off=di9rzt2l&checkoutMode=10", "_blank")}
@@ -35,6 +38,7 @@ export default function MainPage() {
       {/* PROBLEM - Cinza claro */}
       <section className="w-full bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
+        <img src="coursesales-image1.png" alt="Course Sales Image" className="mx-auto rounded-3xl" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
               <h3 className="text-lg font-semibold mb-3 text-slate-900">What’s In The Course?</h3>
