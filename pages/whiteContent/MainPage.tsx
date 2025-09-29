@@ -27,7 +27,7 @@ export default function MainPage() {
             </div>
             <button
               className="inline-flex items-center justify-center rounded-lg bg-red-600 px-8 py-4 text-white font-medium shadow-sm hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition"
-              onClick={() => window.open("https://pay.hotmart.com/K101259508B?off=di9rzt2l&checkoutMode=10", "_blank")}
+              onClick={() => window.open("https://global.frendz.com.br/0m3qjtw1bk", "_blank")}
             >
               SIGN UP NOW
             </button>
