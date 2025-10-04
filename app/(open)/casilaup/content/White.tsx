@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Script from "next/script";
 import VSLWhiteUP, { useVturbWhiteUpLoader } from "@/components/videos/VSLWhiteUP";
 import Button from "@/components/Button";
 
