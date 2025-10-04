@@ -1,40 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Script from "next/script";
-
-// Interface para o tipo do Hotmart
-interface HotmartCheckoutElements {
-  init: (type: string) => {
-    mount: (selector: string) => void;
-  };
-}
-
-declare global {
-  interface Window {
-    checkoutElements?: HotmartCheckoutElements;
-  }
-}
+import React from "react";
+import Button from "@/components/Button";
 
 export default function White() {
-  useEffect(() => {
-    // Aguarda o script do Hotmart carregar e então inicializa o widget
-    const initHotmartWidget = () => {
-      if (typeof window !== 'undefined' && window.checkoutElements) {
-        window.checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-      }
-    };
-
-    // Verifica se o script já foi carregado
-    if (typeof window !== 'undefined' && window.checkoutElements) {
-      initHotmartWidget();
-    } else {
-      // Se não foi carregado ainda, aguarda o evento de load
-      window.addEventListener('load', initHotmartWidget);
-      return () => window.removeEventListener('load', initHotmartWidget);
-    }
-  }, []);
-
   return (
     <>
       <div className="w-full text-sm bg-red-600 text-white">
@@ -48,7 +17,7 @@ export default function White() {
         <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-white appear border-t px-5 py-6 -mb-5 border-gray-200">
           <div className="space-y-4">
             <span className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-              Content Flow Mastery™
+              Scaling Bosses
             </span>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
               Publishing & Scale
@@ -85,20 +54,21 @@ export default function White() {
             
             {/* HOTMART - Sales Funnel Widget */}
             <div id="hotmart-sales-funnel"></div>
+
+            {/* Checkout Actions */}
+            <div style={{ width: "100%", maxWidth: "100%", margin: "0 auto" }} className="flex flex-col items-center gap-3">
+              <a href="https://explodely.com/p/2062208753?ocu=yes" className="w-full">
+                <Button className="!w-full !bg-green-600 !border-green-700 hover:!bg-green-500">
+                  I agree to pay $30 monthly
+                </Button>
+              </a>
+              <a href="/bienvenido" className="text-blue-700 hover:underline text-sm">
+                No, thanks
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Script do Hotmart */}
-      <Script
-        src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          if (typeof window !== 'undefined' && window.checkoutElements) {
-            window.checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-          }
-        }}
-      />
     </>
   );
 } 

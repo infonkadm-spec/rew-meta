@@ -10,11 +10,11 @@ export default async function Page() {
   const domainId = hdrs.get("x-domain-id") || "1";
 
   const promoLinks: Record<string, string> = {
-    "1": "https://global.frendz.com.br/seppu",
-    "2": "https://global.frendz.com.br/seppu",
-    "3": "https://global.frendz.com.br/seppu",
+    "1": "https://explodely.com/p/2043004026",
+    "2": "https://explodely.com/p/2043004026",
+    "3": "https://explodely.com/p/2043004026",
   };
-  const promoLink = promoLinks[domainId] || "https://global.frendz.com.br/seppu";
+  const promoLink = promoLinks[domainId] || "https://explodely.com/p/2043004026";
 
   return (
     <div className="flex flex-col flex-auto items-center font-medium gap-2">
