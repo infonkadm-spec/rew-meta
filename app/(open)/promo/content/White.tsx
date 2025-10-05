@@ -70,6 +70,9 @@ export default function White() {
           <ConfettiEffect />
         </div>
       </section>
+      <footer className="w-full text-center text-xs text-gray-500 px-6 py-6">
+        Disclaimer: The earnings or income examples shared on this website are for informational purposes only and do not guarantee results. Your success depends on many factors outside our control, and individual results will vary.
+      </footer>
     </div>
   );
 }

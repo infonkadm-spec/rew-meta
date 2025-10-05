@@ -31,7 +31,7 @@ export default function Black() {
           {/* <HotmartUpsell black={true} /> */}
           {/* Upsell Actions */}
           <div style={{ width: "100%", maxWidth: "100%", margin: "0 auto" }} className="flex flex-col items-center gap-3">
-            <a href="https://explodely.com/p/2062208753?ocu=yes" className="w-full">
+            <a href="https://explodely.com/p/1518255626?ocu=yes" className="w-full">
               <Button className="!w-full !bg-green-600 !border-green-700 hover:!bg-green-500">
                 I want to access now!
               </Button>

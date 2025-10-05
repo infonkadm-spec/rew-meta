@@ -46,7 +46,8 @@ export default function Home() {
               <Image src="/logo you.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
             </div>
             <p className="text-xs text-slate-500">
-            This course does not guarantee financial results of any kind. The content shared here is for educational purposes only and seeks to teach digital skills related to digital platforms. Any financial results will depend solely and exclusively on individual application, personal effort, and external factors beyond one&apos;s control. We do not sell magic formulas or promise quick returns. Please use this material responsibly and with a critical eye.
+            © 2025 by All rights reserved.<br></br>
+            This site has no affiliation with YouTube or YouTube Inc. It is also neither sponsored nor endorsed by YouTube in any way. YOUTUBE is a registered trademark of YOUTUBE, Inc.
             </p>
             <nav className="flex flex-wrap justify-center gap-4 text-xs text-slate-600">
               <a href="/contact" className="hover:underline">Contact</a>

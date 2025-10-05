@@ -62,13 +62,16 @@ export default function White() {
                   I agree to pay $30 monthly
                 </Button>
               </a>
-              <a href="/bienvenido" className="text-blue-700 hover:underline text-sm">
+              <a href="/turbodown" className="text-blue-700 hover:underline text-sm">
                 No, thanks
               </a>
             </div>
           </div>
         </div>
       </div>
+      <footer className="w-full text-center text-xs text-gray-500 px-6 py-6">
+        Disclaimer: The earnings or income examples shared on this website are for informational purposes only and do not guarantee results. Your success depends on many factors outside our control, and individual results will vary.
+      </footer>
     </>
   );
 } 
