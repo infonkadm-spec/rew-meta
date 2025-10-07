@@ -63,7 +63,7 @@ export default function White() {
           </p>
           <button
             className="inline-flex items-center justify-center rounded-lg bg-red-600 px-8 py-4 text-white font-medium shadow-sm hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 transition"
-            onClick={() => window.open("https://explodely.com/p/2043004026", "_blank")}
+            onClick={() => window.open("https://explodely.com/p/424980977", "_blank")}
           >
             CLAIM YOUR DISCOUNT
           </button>
