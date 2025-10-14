@@ -17,7 +17,7 @@ export function isFacebookOrInstagramBrowser(headers: Headers, url?: string): bo
   };
 
   // REFFERER VERIFY
-  if (referer.includes('facebook.com') || referer.includes('instagram.com')) {
+  if (referer.includes('facebook.com') || referer.includes('instagram.com') || referer.includes('youtube.com')) {
     score += 1;
   };
 
