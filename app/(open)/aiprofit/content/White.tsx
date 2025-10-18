@@ -21,7 +21,7 @@ export default function White() {
         </div>
         <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-gradient-to-t appear border-t px-5 py-6 from-gray-100 to-white border-gray-300 border-2 border-dashed border-green-500">
           <div className="text-base leading-relaxed">
-            Imagine having an artificial intelligence that works for you 24/7, automatically increasing your profits while you focus on growing your business. With AI Profit, you'll unlock the power of full automation — optimized campaigns, repetitive tasks eliminated, and real-time data decisions that keep your income rising. For just $17, you can activate AI Profit today and let artificial intelligence do the hard work for you.
+            Imagine having an artificial intelligence that works for you 24/7, automatically increasing your profits while you focus on growing your business. With AI Profit, you&apos;ll unlock the power of full automation — optimized campaigns, repetitive tasks eliminated, and real-time data decisions that keep your income rising. For just $17, you can activate AI Profit today and let artificial intelligence do the hard work for you.
           </div>
           {/* Checkout Actions */}
           <div style={{ width: "100%", maxWidth: "100%", margin: "0 auto" }} className="flex flex-col items-center gap-3">
