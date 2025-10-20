@@ -27,6 +27,12 @@ export function middleware(req: NextRequest) {
   const gbraid = searchParams.get('gbraid');
   const gadSource = searchParams.get('gad_source');
 
+  // Passar parâmetros Google via headers para o ContentFilter
+  if (gclid) requestHeaders.set('x-gclid', gclid);
+  if (wbraid) requestHeaders.set('x-wbraid', wbraid);
+  if (gbraid) requestHeaders.set('x-gbraid', gbraid);
+  if (gadSource) requestHeaders.set('x-gad-source', gadSource);
+
   // Parâmetro CLOAKER é obrigatório para todas as fontes (Meta, Google, YouTube)
   if (catParam === CLOAKER_PARAM_PASS) {
     searchParams.delete('cat');

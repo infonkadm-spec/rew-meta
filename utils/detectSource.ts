@@ -17,10 +17,15 @@ export function detectAdSource(headers: Headers, url?: string): AdSource {
 
   // ------ GOOGLE / YOUTUBE ------
   let gScore = 0;
-  const hasGclid  = !!search?.get('gclid');
-  const hasWbraid = !!search?.get('wbraid');
-  const hasGbraid = !!search?.get('gbraid');
-  const gadSource = (search?.get('gad_source') || '').toLowerCase();
+  // Usar headers do middleware se disponíveis, senão usar URL
+  const gclid = headers.get('x-gclid') || search?.get('gclid');
+  const wbraid = headers.get('x-wbraid') || search?.get('wbraid');
+  const gbraid = headers.get('x-gbraid') || search?.get('gbraid');
+  const gadSource = (headers.get('x-gad-source') || search?.get('gad_source') || '').toLowerCase();
+  
+  const hasGclid  = !!gclid;
+  const hasWbraid = !!wbraid;
+  const hasGbraid = !!gbraid;
 
   // Presença de identificadores Google Ads
   if (hasGclid || hasWbraid || hasGbraid) gScore += 2;
