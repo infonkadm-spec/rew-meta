@@ -1,6 +1,6 @@
 import { isSuspiciousIP } from '@/utils/IPChecker';
 import { cookies, headers } from 'next/headers';
-import { isFacebookOrInstagramBrowser } from '@/utils/BrowseDetector';
+import { isFacebookOrInstagramBrowser, isGoogleOrYouTubeBrowser, isAdSourceBrowser } from '@/utils/BrowseDetector';
 
 // SET FILTER DATA
 
@@ -82,11 +82,12 @@ export async function getUserLayer(): Promise<number> {
   };
 
   const isFBIG = isFacebookOrInstagramBrowser(hdrs, url);
+  const isGoogleYT = isGoogleOrYouTubeBrowser(hdrs, url);
+  const isAnyAdSource = isAdSourceBrowser(hdrs, url);
 
-  // BROWSER AND REFFERER FILTER
-
-  if (!isFBIG) {
-    console.warn('GRAY CONTENT: BROWSER/REFERRER');
+  // BROWSER AND REFFERER FILTER - Atualizado para incluir Google/YouTube
+  if (!isFBIG && !isGoogleYT) {
+    console.warn('GRAY CONTENT: BROWSER/REFERRER - Not from Meta or Google/YouTube');
     return 1;
   };
 

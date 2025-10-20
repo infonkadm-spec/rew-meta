@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const FACEBOOK_PARAM_PASS = 'b6mP2e7KIKH7i2w';
+const CLOAKER_PARAM_PASS = 'b6mP2e7KIKH7i2w'; // Parâmetro único para todas as fontes
 
 const domainMap: Record<string, string> = {
   "www.youtube-rewards.online": "1",
@@ -22,8 +22,13 @@ export function middleware(req: NextRequest) {
   requestHeaders.set('x-domain-id', domainId);
 
   const catParam = searchParams.get('cat');
+  const gclid = searchParams.get('gclid');
+  const wbraid = searchParams.get('wbraid');
+  const gbraid = searchParams.get('gbraid');
+  const gadSource = searchParams.get('gad_source');
 
-  if (catParam === FACEBOOK_PARAM_PASS) {
+  // Parâmetro CLOAKER é obrigatório para todas as fontes (Meta, Google, YouTube)
+  if (catParam === CLOAKER_PARAM_PASS) {
     searchParams.delete('cat');
     const newUrl = req.nextUrl.clone();
     newUrl.search = searchParams.toString();
