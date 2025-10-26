@@ -24,8 +24,8 @@ export default function Page3({
           />
         </div>
         <div className="flex flex-col gap-2 text-center my-4">
-          <span className="text-lg font-semibold">¿Cuál es tu reacción cuando ves la portada de este vídeo?</span>
-          <span className="text-sm text-gray-600">Seleccione la opción a continuación ⬇️</span>
+          <span className="text-lg font-semibold">What is your reaction when you see the cover of this video?</span>
+          <span className="text-sm text-gray-600">Select the option below ⬇️</span>
         </div>
         <div className="grid grid-cols-3 gap-3">
           <Option onClick={handleClick} className="active:!ring-green-500">
