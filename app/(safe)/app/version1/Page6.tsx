@@ -4,11 +4,11 @@ import PixelV3 from "@/components/pixels/PixelV3";
 //import PlacesAlert from '@/components/PlacesAlert';
 //import AlertBoxUrgente from "@/components/AlertBoxUrgente";
 import { useLayer } from '@/context/LayerProvider';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default function Page6() {
   // COMPONENT STATES
-  const [visible] = useState<boolean>(false);
+  // const [visible] = useState<boolean>(false);
 
   // IMPORT CONTEXT DATA
   const userLayer = useLayer();

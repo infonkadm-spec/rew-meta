@@ -32,7 +32,7 @@ export default function Page1({
         <div className="flex flex-col gap-4">
           <span className="text-xl font-bold">Earn money by rating videos</span>
           <div className="flex flex-col gap-2">
-            <span>Congratulations! You've just won a free license to evaluate ads in our app.</span>
+            <span>Congratulations! You&apos;ve just won a free license to evaluate ads in our app.</span>
             <span>Click the button below to start watching videos and claim your bonus!</span>
           </div>
         </div>
