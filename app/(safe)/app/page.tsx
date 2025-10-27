@@ -70,10 +70,12 @@ export default function Page() {
 
   return (
     <div className="flex flex-col w-full max-w-xl gap-5 px-4 py-5 pb-10">
-      <div className="flex justify-between items-center">
-        <Logo />
-        <Balance page={page} />
-      </div>
+      {page !== 1 && (
+        <div className="flex justify-between items-center">
+          <Logo />
+          <Balance page={page} />
+        </div>
+      )}
       <PageContent
         active={active}
         handleClick={handleClick}
@@ -87,5 +89,4 @@ export default function Page() {
       )}
     </div>
   );
-
 };

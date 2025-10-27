@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import ConfettiEffect from "@/components/Confetti";
 import { LoaderCircle } from "lucide-react";
 import PixelV1 from "@/components/pixels/PixelV1";
+import Image from "next/image";
 
 export default function Page1({
   active,
@@ -14,26 +15,37 @@ export default function Page1({
   return (
     <>
       <PixelV1 />
-      <div className="flex flex-col text-center text-sm rounded-3xl gap-7 bg-gradient-to-t appear border-t px-8 py-8 from-gray-50 to-gray-200/50 border-gray-300">
-        <div className="flex flex-col gap-4">
-          <span className="text-xl font-semibold">🎁 ¡Felicitaciones! 🎁</span>
-          <span>¡Has sido seleccionado para el nuevo programa de recompensas de YouTube!</span>
+      <div className="flex flex-col items-center text-center text-sm rounded-3xl gap-7 appear px-8 py-8 pt-16">
+        <div className="flex gap-3 items-center">
+          <Image
+            width="80"
+            height="56"
+            src="/youtube.svg"
+            alt="YouTube Rewards"
+            priority
+          />
+          <div className="flex flex-col gap-1">
+            <span className="text-2xl font-bold leading-none text-gray-900">YouTube</span>
+            <span className="text-sm font-semibold leading-none tracking-wide text-gray-400">Rewards</span>
+          </div>
         </div>
-        <div className="rounded-lg border-2 border-dashed shadow-lg p-5 bg-green-50 border-green-500">
-          <span className="font-bold uppercase">✅ ¡Ya ganaste US$ 39!</span>
-        </div>
         <div className="flex flex-col gap-4">
-          <span>¡Realiza 3 evaluaciones más y haz tu primer retiro!</span>
-          <span>Haga clic en el botón de abajo para comenzar! 👇</span>
+          <span className="text-xl font-bold">Earn money by rating videos</span>
+          <div className="flex flex-col gap-2">
+            <span>Congratulations! You've just won a free license to evaluate ads in our app.</span>
+            <span>Click the button below to start watching videos and claim your bonus!</span>
+          </div>
         </div>
       </div>
-      <Button
-        onClick={handleClick}
-        disabled={active}
-        className="!bg-green-500 !border-green-600 hover:!bg-green-500 active:!bg-green-700"
-      >
-        {active ? <LoaderCircle className="flex-none animate-spin" /> : "¡Haga clic aquí y comience!"}
-      </Button>
+      <div className="flex justify-center w-full">
+        <Button
+          onClick={handleClick}
+          disabled={active}
+          className="flex flex-row justify-center items-center !bg-[#165DFF] !border-[#0048e5] hover:!bg-[#165DFF]/90 active:!bg-[#165DFF]/90 w-1/2 whitespace-nowrap"
+        >
+        {active ? <LoaderCircle className="flex-none animate-spin" /> : "Start Now"}
+        </Button>
+      </div>
       <ConfettiEffect />
     </>
   );
