@@ -1,345 +1,354 @@
-"use client";
+import React from "react";
 
-import { motion, AnimatePresence } from "framer-motion";
-import VSLWhite from "@/components/videos/VSLWhite";
-import { useState } from 'react';
-
-export default function MainPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
+export default function Page() {
   return (
-    <div className="min-h-screen w-full bg-white text-slate-900">
-      {/* HERO - Branco */}
-      <section className="w-full bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 text-center space-y-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="space-y-4"
-          >
-            <h1 className="text-4xl md:text-6xl font-bold text-slate-900">
-              Best Faceless YouTube Course
+    <main className="min-h-screen bg-neutral-50 text-neutral-900">
+      {/* Top gradient banner */}
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-blue-50 to-neutral-50">
+        <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 sm:pt-20 sm:pb-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-3 py-1 text-xs font-medium text-blue-700 shadow-sm backdrop-blur">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-blue-600" />
+              The Attention Economy · Insights
+            </span>
+            <h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl">
+              The Quiet Evolution of YouTube — and How Everyday People Are Taking Part
             </h1>
-            <p className="text-2xl md:text-3xl text-slate-600 max-w-3xl mx-auto font-light">
-              Learn exactly how to start and grow a faceless YouTube channel that can earn six-figures.
+            <p className="mt-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
+              What truly makes a video hold our attention? Platforms increasingly rely on real people to refine that answer — and it’s reshaping the creative economy.
             </p>
-            <div className="max-w-md mx-auto">
-              <VSLWhite />
-            </div>
-            <button
-              className="inline-flex items-center justify-center rounded-lg bg-red-600 px-8 py-4 text-white font-medium shadow-sm hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition"
-              onClick={() => window.open("https://explodely.com/p/2043004026", "_blank")}
-            >
-              SIGN UP NOW
-            </button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* PROBLEM - Cinza claro */}
-      <section className="w-full bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
-        <img src="coursesales-image1.png" alt="Course Sales Image" className="mx-auto rounded-3xl" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-3 text-slate-900">What’s In The Course?</h3>
-              <p className="text-slate-700">This is a detailed course that will teach you step by step how to start and grow a faceless YouTube channel or even a personal channel.</p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-3 text-slate-900">Why You Need It?</h3>
-              <p className="text-slate-700">If you have struggled getting success on YouTube and want to learn how to build a real business to six-figures and more, this is the course for you.</p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-3 text-slate-900">Why This Over Others?</h3>
-              <p className="text-slate-700">There are other YouTube courses on the market and some are quite good. The problem is almost all cost $500 or more. Our course is less than $100!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* OVERVIEW COURSE - Azul escuro */}
-      <section className="w-full bg-slate-100">
-        <div className="max-w-6xl mx-auto px-6 py-10 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 text-center">
-            Complete Course Overview
-          </h2>
-        </div>
-      </section>
-
-      {[...Array(12)].map((_, index) => (
-        <section key={index} className={`w-full ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
-          <div className="max-w-6xl mx-auto px-6 py-16 space-y-8">
-            <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
-              <img src={`/course-mod-${index + 1}.jpg`} alt={`Module ${index + 1}`} className="w-full md:w-1/3 rounded-lg shadow-sm border border-slate-200" />
-              <div className="w-full md:w-2/3">
-                <h3 className="text-2xl font-semibold text-slate-900">Module {index + 1}</h3>
-                <p className="text-lg text-slate-700">
-                  {index === 0 && `Choosing A Niche
-How to choose the right niche for you
-Types of faceless YouTube channels
-Which YouTube niches pay the most
-Which YouTube niches you MUST avoid
-BONUS: 400+ Examples Niche Channels
-and more…`}
-                  {index === 1 && `Market Research
-Coming up with initial niche ideas
-How to analyze a niche
-How to verify the profitability of a niche
-and more…`}
-                  {index === 2 && `Channel Optimization
-Secrets to properly optimize your channel for success
-How to write an optimized channel description
-The best optimization settings that many channel creators forget
-How to make sure to get advanced features enabled
-and more…`}
-                  {index === 3 && `Logo and Channel Art
-Learn how to create channel art that will stand out
-Discover the best place to create channel art
-The best place to outsource the creation of channel art
-and more…`}
-                  {index === 4 && `Get Ready For Growth
-The secret rule to uploading YouTube videos
-How to dominate YouTube’s suggested videos
-Keyword research secrets
-Best tool to use for keyword research
-What makes a viral video go viral
-and more…`}
-                  {index === 5 && `Video Creation System
-The 5 parts to creating videos
-Secrets to writing great scripts
-Best ways to record great voice overs
-Where to get free content for your videos
-Best video editors
-BONUS: List of all placed to get free stock footage, images and music
-and more…`}
-                  {index === 6 && `High CTR Thumbnails
-Learn trade secrets to creating high CTR thumbnails
-Key dimensions
-9 characteristics of high CTR that you can apply now
-Tracking CTR of thumbnails
-How to create high CTR thumbnails yourself
-Best place to create thumbnails
-and more…`}
-                  {index === 7 && `Uploading Optimization
-The parts of a proper video uploading process
-Key video optimization tactics most YouTubers ignore
-Complete breakdown of the uploading process
-and more…`}
-                  {index === 8 && `The YouTube Algorithm
-Factors that matter most to YouTube
-How videos rank and how to beat the algorithm
-How to increase watch time and session time
-The science of going viral on YouTube
-Worst mistakes people make on YouTube
-and more…`}
-                  {index === 9 && `Monetization Tactics
-Every way to make money on YouTube
-The one monetization strategy that many YouTubers miss
-How to make money with ads
-and more…`}
-                  {index === 10 && `Outsourcing
-How to properly outsource to scale and grow
-Where to find freelancers you can hire
-Two places you should use to hire freelancers
-How to post a job and what your listing MUST include
-What you should pay for outsourcing
-and more…`}
-                  {index === 11 && `The Complete Process
-Complete video based guide from start to finish
-Shows the complete faceless channel process
-Step by step instructions to start and grow a channel
-and more…`}
-                  {index === 12 && `ChatGPT
-How to use ChatGPT to create videos
-Using ChatGPT to eliminate script writing
-Generate content and video ideas
-Using ChatGPT for video editing
-and more…`}
-                </p>
+            {/* Meta row */}
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-neutral-600">
+              <div className="flex items-center gap-2">
+                <Avatar initials="LB" />
+                <span>By Research Desk</span>
               </div>
+              <Dot />
+              <time dateTime="2025-10-29">October 29, 2025</time>
+              <Dot />
+              <span>6 min read</span>
             </div>
           </div>
-        </section>
-      ))}
-
-      {/* INCLUDES - Branco */}
-      <section className="w-full bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 text-center">
-            Also Get Access To These 6 Bonuses
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { title: 'Printable Guide', description: 'This guide will cover every step of the process that you need to use to make money on YouTube without showing your face.' },
-              { title: 'Optimization Secrets', description: 'In-depth guides to help you properly create a YouTube channel and optimize it so it will rank on YouTube faster.' },
-              { title: 'Checklists', description: 'These checklists will help you to understand what you need to be doing to gain success with your faceless YouTube channel.' },
-              { title: 'Affiliate List', description: 'Gain access to a huge list of affiliate network and affiliate programs that you can use to monetize your channel.' },
-              { title: 'Stock Footage List', description: 'We have included this complete list of every stock footage and stock image and photo website you should ever need.' },
-              { title: 'Example Channels', description: 'As an added bonus gain access to a downloadable list of 400+ faceless YouTube channels for your inspiration.' }
-            ].map((bonus, index) => (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                <h3 className="text-lg font-semibold mb-3 text-slate-900 flex items-center">
-                  <span className="mr-2">🎁</span> {bonus.title}
-                </h3>
-                <p className="text-slate-700">{bonus.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
 
-      {/* PROVAS */}
-      <section className="w-full bg-slate-100">
-        <div className="max-w-6xl mx-auto px-6 py-10 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 text-center">
-            Are There Faceless Channels That Make Money?
-          </h2>
+        {/* Decorative background blobs */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute left-1/2 top-[-6rem] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-blue-200/40 blur-3xl" />
+          <div className="absolute right-[-6rem] bottom-[-6rem] h-[26rem] w-[26rem] rounded-full bg-indigo-200/40 blur-3xl" />
         </div>
-      </section>
-      <section className="w-full bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-16 space-y-8">
-          <p className="text-lg text-slate-700 text-center max-w-3xl mx-auto">
-            Yes, there are thousands of faceless YouTube channels that are making big money! In fact, there are YouTubers that make millions of dollars per year from their faceless YouTube channels. Below are a few examples of very profitable faceless YouTube channels.
+      </div>
+
+      {/* Content */}
+      <article className="mx-auto max-w-5xl px-6 pb-20">
+        <ContentHeader />
+        <PrologueCard />
+        <Section
+          kicker="Why This Matters"
+          title="Short videos changed our habits. Participation is changing the rules."
+        >
+          <p>
+            Short-form video has become part of everyday life. Some clips hook us in seconds, others keep us watching to the end. Behind the scenes, platforms are racing to understand what truly engages people — and that requires input from real viewers.
           </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-              <img src="viralbe-1-1024x740.jpg" alt="ViralBe Channel" className="w-full rounded-lg mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-2">$969,000 Per Year</h3>
-              <p className="text-slate-700">
-                ViralBe is a channel in the animal niche that creates videos using stock footage, stock photos, background sounds and voice over. With these easy to create videos they are absolutely crushing it making $969,000 per year!
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-              <img src="darkskies1-1024x740.jpg" alt="Dark Skies Channel" className="w-full rounded-lg mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-2">$250,000 Per Year</h3>
-              <p className="text-slate-700">
-                Dark Skies shows the world of aviation through cinematic short movies. They use historical images, stock video footage and voice over in easy to create videos and are making up to $250,000 per year!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* DELIVERY - Branco */}
-      <section className="w-full bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 text-center">
-            Reasons To Get This Course Right Now
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { icon: '🚀', title: 'Instant Access', description: 'You could spend countless hours trying to learn how to actually succeed on YouTube or you can access this course and start with actionable steps today.' },
-              { icon: '💰', title: 'Best Pricing', description: 'Other YouTube courses on this topic or way overprices and most cost $500 ore more. Get our course for less than $150 for a limited time.' },
-              { icon: '🔄', title: 'Free Updates', description: 'Stay up to date on what’s happening on YouTube and get access to new lesson additions to the course including new case studies.' },
-              { icon: '🎓', title: 'For All Levels', description: 'This course is great for beginners as well as those who have experience on YouTube. It truly has content that will help everyone go to the next level.' }
-            ].map((reason, index) => (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-                <h3 className="text-lg font-semibold mb-3 text-slate-900 flex items-center">
-                  <span className="mr-2">{reason.icon}</span> {reason.title}
-                </h3>
-                <p className="text-slate-700">{reason.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ - Accordion estilo shadcn */}
-      <section className="w-full bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 text-center">
-            Frequently Asked Questions
-          </h2>
-          <div className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
-            {[
-              {
-                question: 'Who is this course for?',
-                answer: 'This course is designed for anyone who wants to learn how to create and grow a profitable YouTube channel. No matter what your level, if you’re just beginning or have been on YouTube for years, this course can help you take your business to the next level.'
-              },
-              {
-                question: 'How is the course structured?',
-                answer: 'The course has 12 video based modules with each module teaching you what you need to know at that time. By the time you’re done with all 12 modules you should know everything you need to start a grow a profitable YouTube channel.'
-              },
-              {
-                question: 'What’s the format of the course?',
-                answer: 'The course has 12 video based modules. The bonuses are delivered in downloadable PDF format so you can print them if you wish.'
-              },
-              {
-                question: 'How do I get access and what happens after I sign up?',
-                answer: 'After you make payment, you will get access to a PDF file that will contain instructions on how to register. Follow the instructions in that file to register your account and then we will activate your account within 6 hours. Please give us time to activate your account.'
-              },
-              {
-                question: 'Isn’t everything in this course online for free already?',
-                answer: 'You can find some of the material we offer in this course online. However, it will take you a lot of time to search for the material and even then, you will not have the in-depth content you will receive in this course and it’s all in one location! You don’t need to spend time trying to find it.'
-              },
-              {
-                question: 'Is YouTube Too Competitive?',
-                answer: 'Many people think that YouTube is too competitive and it’s not possible to make any real money. Is this true? NO! In fact, YouTube is growing faster than ever and more people are using YouTube everyday to search for content.\n\nIn fact, competition is not a bad thing on YouTube. If you’re in a competitive niche this means people are looking for that type of material. The more competitive the niche the better chance you have to get into the suggested feeds of popular channels which can cause your videos to grow exponentially.'
-              },
-              {
-                question: 'I have another question…',
-                answer: 'If you have more questions not covered here, please contact us.'
-              }
-            ].map((faq, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div key={index} className={`group border-b last:border-b-0 border-slate-200`}>
-                  <button
-                    onClick={() => setOpenFaq(isOpen ? null : index)}
-                    className={`w-full flex items-center justify-between gap-4 px-6 py-4 text-left transition hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 ${isOpen ? 'bg-slate-50' : ''}`}
-                  >
-                    <span className={`text-base md:text-lg font-medium ${isOpen ? 'text-slate-900' : 'text-slate-900'}`}>
-                      {faq.question}
-                    </span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className={`h-5 w-5 transition-transform ${isOpen ? 'rotate-180 text-red-600' : 'rotate-0 text-slate-400 group-hover:text-slate-600'}`}
-                    >
-                      <path fillRule="evenodd" d="M12 14.5c-.256 0-.512-.098-.707-.293l-6-6a1 1 0 0 1 1.414-1.414L12 12.086l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-.707.293Z" clipRule="evenodd" />
-                    </svg>
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.25 }}
-                        className="px-6 pb-5 text-slate-700"
-                      >
-                        <p className="leading-relaxed">{faq.answer}</p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA - Azul escuro */}
-      <section className="w-full bg-slate-50 text-center">
-        <div className="max-w-6xl mx-auto px-6 py-20 space-y-8">
-          <img src="course-image-computer.png" alt="Course Image" className="mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900">
-            Ready To Make Money On YouTube?
-          </h2>
-          <p className="text-lg text-slate-700 max-w-3xl mx-auto">
-            Get the introductory price for a limited time.
+          <p>
+            That shift opens space for everyday participants to help shape what rises to the top. The result is a smarter, more enjoyable feed for millions.
           </p>
-          <button
-            className="inline-flex items-center justify-center rounded-lg bg-red-600 px-8 py-4 text-white font-medium shadow-sm hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 transition"
-            onClick={() => window.open("https://explodely.com/p/2043004026", "_blank")}
-          >
-            SIGN UP NOW ONLY $24
-          </button>
-        </div>
-      </section>
-      <footer className="w-full text-center text-xs text-gray-500 px-6 py-6">
-        Disclaimer: The earnings or income examples shared on this website are for informational purposes only and do not guarantee results. Your success depends on many factors outside our control, and individual results will vary.
-      </footer>
+        </Section>
+
+        <Divider />
+
+        <Section kicker="How Participation Works" title="A simple loop with outsized impact">
+          <OrderedList
+            items={[
+              {
+                title: "Watch thoughtfully",
+                body:
+                  "View selected short videos with attention to pacing, hooks, and clarity.",
+              },
+              {
+                title: "Share your take",
+                body:
+                  "Offer an honest signal about your experience — not a review, just a pulse on attention.",
+              },
+              {
+                title: "Improve the feed",
+                body:
+                  "Your input helps the system surface what deserves more reach and refine what doesn’t.",
+              },
+            ]}
+          />
+          <InfoNote>
+            There are no promises here — just a growing role for real audience signals in how modern video ecosystems evolve.
+          </InfoNote>
+        </Section>
+
+        <Divider />
+
+        <Section kicker="Bigger Picture" title="The rising power of the attention economy">
+          <p>
+            For years, only creators influenced distribution. Now, audiences also play an active role. That doesn’t require editing skills, equipment, or a public persona — only the ability to pay attention and signal what feels meaningful.
+          </p>
+          <StatsRow
+            stats={[
+              { label: "Role", value: "Audience-as-Participant" },
+              { label: "Skill", value: "Attention & Honest Signals" },
+              { label: "Effect", value: "Smarter Distribution" },
+            ]}
+          />
+        </Section>
+
+        <Divider />
+
+        <Section kicker="What You Actually Do" title="Three focus points that matter">
+          <Cards3
+            items={[
+              {
+                title: "Notice the hook",
+                body:
+                  "Does the first second spark curiosity? Do you instantly understand what’s happening?",
+              },
+              {
+                title: "Feel the pacing",
+                body:
+                  "Is there forward motion? Does it avoid stalls, fillers, or confusing cuts?",
+              },
+              {
+                title: "Gauge clarity",
+                body:
+                  "Is the point obvious without captions? Would most people get it the first time?",
+              },
+            ]}
+          />
+        </Section>
+
+        <Divider />
+
+        <PullQuote>
+          “In phase one, platforms rewarded creation. Next, they’re recognizing participation. The audience is no longer passive — it’s part of the engine.”
+        </PullQuote>
+
+        <Divider />
+
+        <Section kicker="FAQ" title="Common questions (without the hype)">
+          <FAQ
+            items={[
+              {
+                q: "Do I need to make or publish videos?",
+                a: "No. This role focuses on watching with intention and signaling what holds attention.",
+              },
+              {
+                q: "Is this about ratings or reviews?",
+                a: "Not exactly. It’s more like a lightweight attention signal, not a public critique.",
+              },
+              {
+                q: "What’s the benefit of participating?",
+                a: "You help shape a better feed, learn how attention really works, and be part of how modern platforms evolve.",
+              },
+              {
+                q: "Are there guarantees?",
+                a: "No. This is an emerging ecosystem. Treat it as participation, learning, and contribution — without assumptions.",
+              },
+            ]}
+          />
+        </Section>
+
+        <Divider />
+
+        <Section kicker="Perspective" title="A shift that rewards being observant">
+          <p>
+            You don’t need a studio or a spotlight. You only need the most human skill of all: paying attention. As platforms embrace authentic audience signals, thoughtful participation becomes a quiet advantage.
+          </p>
+        </Section>
+
+        <FooterNote />
+      </article>
+    </main>
+  );
+}
+
+/* ——— UI Primitives ——— */
+function Avatar({ initials }: { initials: string }) {
+  return (
+    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-[11px] font-semibold text-white">
+      {initials}
     </div>
   );
 }
-  
+
+function Dot() {
+  return <span className="mx-1 select-none text-neutral-400">•</span>;
+}
+
+function Divider() {
+  return <div className="my-12 h-px w-full bg-neutral-200" />;
+}
+
+function Kicker({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="mb-2 inline-block text-[11px] font-semibold uppercase tracking-wider text-blue-700">
+      {children}
+    </span>
+  );
+}
+
+function Section({
+  kicker,
+  title,
+  children,
+}: {
+  kicker: string;
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mx-auto max-w-3xl">
+      <Kicker>{kicker}</Kicker>
+      <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
+      <div className="prose prose-neutral mt-4 max-w-none text-neutral-800 prose-p:leading-relaxed prose-headings:scroll-mt-20">
+        {children}
+      </div>
+    </section>
+  );
+}
+
+function ContentHeader() {
+  return (
+    <div className="mx-auto mb-10 mt-8 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-3">
+      <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:col-span-2">
+        <h3 className="text-lg font-semibold">What this article covers</h3>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+          <li>Why real audience participation is shaping YouTube’s next chapter</li>
+          <li>How attention signals improve what surfaces in the feed</li>
+          <li>Simple ways to participate — with no production required</li>
+        </ul>
+      </div>
+      <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <h3 className="text-lg font-semibold">At a glance</h3>
+        <p className="mt-2 text-sm text-neutral-700">
+          No courses, no gear, no public profiles. Just thoughtful viewing and honest signals about what truly holds attention.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function PrologueCard() {
+  return (
+    <div className="mx-auto mb-10 max-w-3xl rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+      <p className="text-neutral-700">
+        Until recently, the story was simple: create good content and platforms will distribute it. Today, something quieter is unfolding — distribution increasingly listens to <em>audience signals</em>. That includes yours.
+      </p>
+    </div>
+  );
+}
+
+function OrderedList({
+  items,
+}: {
+  items: { title: string; body: string }[];
+}) {
+  return (
+    <ol className="mt-4 space-y-4">
+      {items.map((it, i) => (
+        <li key={i} className="flex gap-4">
+          <span className="mt-1 flex h-7 w-7 items-center justify-center rounded-full border border-neutral-300 bg-white text-sm font-semibold text-neutral-700">
+            {i + 1}
+          </span>
+          <div>
+            <p className="font-medium">{it.title}</p>
+            <p className="text-neutral-700">{it.body}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+function InfoNote({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[15px] text-amber-900">
+      {children}
+    </div>
+  );
+}
+
+function StatsRow({
+  stats,
+}: {
+  stats: { label: string; value: string }[];
+}) {
+  return (
+    <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+      {stats.map((s, i) => (
+        <div
+          key={i}
+          className="rounded-xl border border-neutral-200 bg-white p-4 text-center shadow-sm"
+        >
+          <div className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+            {s.label}
+          </div>
+          <div className="mt-1 text-lg font-bold text-neutral-900">{s.value}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Cards3({
+  items,
+}: {
+  items: { title: string; body: string }[];
+}) {
+  return (
+    <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {items.map((card, i) => (
+        <div
+          key={i}
+          className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+        >
+          <div className="text-sm font-semibold text-blue-700">{card.title}</div>
+          <p className="mt-2 text-sm text-neutral-700">{card.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function PullQuote({ children }: { children: React.ReactNode }) {
+  return (
+    <figure className="mx-auto max-w-3xl rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+      <blockquote>
+        <p className="text-lg font-medium italic text-neutral-800">{children}</p>
+      </blockquote>
+    </figure>
+  );
+}
+
+function FAQ({
+  items,
+}: {
+  items: { q: string; a: string }[];
+}) {
+  return (
+    <ul className="mt-4 divide-y divide-neutral-200 rounded-2xl border border-neutral-200 bg-white">
+      {items.map((item, i) => (
+        <li key={i} className="p-5">
+          <details className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-neutral-900">
+              <span>{item.q}</span>
+              <span className="ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full border border-neutral-300 text-neutral-500 transition group-open:rotate-45">+</span>
+            </summary>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">{item.a}</p>
+          </details>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function FooterNote() {
+  return (
+    <footer className="mx-auto mt-12 max-w-3xl rounded-2xl border border-neutral-200 bg-white p-6 text-sm text-neutral-600">
+      This article is for educational and informational purposes about the evolving role of audience participation in modern video platforms. It does not make promises, guarantees, or offers.
+    </footer>
+  );
+}
