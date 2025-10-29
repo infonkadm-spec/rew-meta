@@ -20,7 +20,7 @@ export default function Page() {
             {/* Meta row */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-neutral-600">
               <div className="flex items-center gap-2">
-                <Avatar initials="LB" />
+                <Avatar initials="RD" />
                 <span>By Research Desk</span>
               </div>
               <Dot />

@@ -40,26 +40,12 @@ export default function Home() {
           page={page}
           setPage={setPage}
         />
-        <footer className="w-full bg-slate-100 border-t border-slate-200 mt-8 py-8 px-4">
+        <footer className="w-full py-8 px-4" style={{ backgroundColor: '#0A0A0A' }}>
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <div className="flex justify-center mb-4">
-              <Image src="/logo you.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
-            </div>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-white/50">
             © 2025 by All rights reserved.<br></br>
             This site has no affiliation with YouTube or YouTube Inc. It is also neither sponsored nor endorsed by YouTube in any way. YOUTUBE is a registered trademark of YOUTUBE, Inc.
             </p>
-            <nav className="flex flex-wrap justify-center gap-4 text-xs text-slate-600">
-              <a href="/contact" className="hover:underline">Contact</a>
-              <span>|</span>
-              <a href="/terms" className="hover:underline">Terms of Use</a>
-              <span>|</span>
-              <a href="/disclaimer" className="hover:underline">Disclaimer</a>
-              <span>|</span>
-              <a href="/privacy" className="hover:underline">Privacy Policy</a>
-              <span>|</span>
-              <a href="/refund" className="hover:underline">Refund Policy</a>
-            </nav>
           </div>
         </footer>
       </div>
