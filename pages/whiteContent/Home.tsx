@@ -4,7 +4,6 @@
 
 import MainPage from "./MainPage";
 import { useState } from "react";
-import Image from "next/image";
 
 // ROUTES VERSION 1 (Comentado temporariamente)
 // const RoutesV1: Record<number, any> = {
