@@ -70,17 +70,15 @@ export default function Page() {
 
   return (
     <div className="flex flex-col w-full max-w-xl gap-5 px-4 py-5 pb-10">
-      {page !== 1 && (
-        <div className="flex justify-between items-center">
-          <Logo />
-          <Balance page={page} />
-        </div>
-      )}
+      <div className="flex justify-between items-center">
+        <Logo />
+        <Balance page={page} />
+      </div>
       <PageContent
         active={active}
         handleClick={handleClick}
       />
-      {openModal && <Modal value={rewardValues[page] || 47} />}
+      {openModal && <Modal value={rewardValues[page] || 58} />}
       {isInfoPage && (
         <div className="flex flex-col justify-center text-center gap-3 p-4 text-gray-400/70">
           <span className="text-sm">© 2025 YouTube Rewards</span>
@@ -89,4 +87,5 @@ export default function Page() {
       )}
     </div>
   );
+
 };

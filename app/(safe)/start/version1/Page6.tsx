@@ -1,14 +1,14 @@
 import Comments from "@/components/Comments";
-import VSLBlackV3 from "@/components/videos/VSLBlackV3";
-import PixelV3 from "@/components/pixels/PixelV3";
+import VSLBlackV2 from "@/components/videos/VSLBlackV2";
+import PixelV2 from "@/components/pixels/PixelV2";
 //import PlacesAlert from '@/components/PlacesAlert';
 //import AlertBoxUrgente from "@/components/AlertBoxUrgente";
 import { useLayer } from '@/context/LayerProvider';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Page6() {
   // COMPONENT STATES
-  // const [visible] = useState<boolean>(false);
+  const [visible] = useState<boolean>(false);
 
   // IMPORT CONTEXT DATA
   const userLayer = useLayer();
@@ -51,12 +51,15 @@ export default function Page6() {
 
   return (
     <>
-      <PixelV3 />
-      <div className="flex items-center flex-col gap-1 relative">
-        <VSLBlackV3 />
-        <div className="flex flex-col gap-2 px-4 py-6">
-          <h2 className="text-lg font-semibold">🚨 ATTENTION! Watch the video to the end to understand how to withdraw your available balance. ⬆️</h2>
-        </div>
+      <PixelV2 />
+      <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-gradient-to-t appear border-t px-4 py-6 from-gray-50 to-gray-200/50 border-gray-300">
+        <span className="text-base sm:text-2xl font-semibold tracking-tight">
+          🚨 ATTENTION! Watch the video to the end to understand how to withdraw your available balance. ⬇️
+        </span>
+        {/*<PlacesAlert />*/}
+      </div>
+      <div className="flex items-center flex-col gap-1 relative -mt-4">
+        <VSLBlackV2 />
         {/*<AlertBoxUrgente
           videoIdA={videoIdA}
           videoIdB={videoIdB}
@@ -64,6 +67,11 @@ export default function Page6() {
           thresholdBSeconds={702}
         />*/}
       </div>
+      {!visible && (
+        <div className="text-sm text-center p-2">
+          🔊 Check if your sound is activated
+        </div>
+      )}
       
       <Comments />
     </>
