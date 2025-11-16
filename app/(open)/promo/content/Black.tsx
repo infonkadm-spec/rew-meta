@@ -2,19 +2,41 @@ import Logo from "@/components/Logo";
 import Button from "@/components/Button";
 import Balance from "@/components/Balance";
 import ConfettiEffect from "@/components/Confetti";
+import PixelV2 from "@/components/pixels/PixelV2";
 import { headers } from "next/headers";
 
 export default async function Page() {
   // GET DOMAIN ID
   const hdrs = await headers();
   const domainId = hdrs.get("x-domain-id") || "1";
+  const url = hdrs.get("x-url") || "";
 
   const promoLinks: Record<string, string> = {
     "1": "https://site.burnerhot.com/yt-checkout-17usd",
     "2": "https://site.burnerhot.com/yt-checkout-17usd",
     "3": "https://site.burnerhot.com/yt-checkout-17usd",
   };
-  const promoLink = promoLinks[domainId] || "https://site.burnerhot.com/yt-checkout-17usd";
+  let promoLink = promoLinks[domainId] || "https://site.burnerhot.com/yt-checkout-17usd";
+
+  // Repassar todos os parâmetros UTM da URL atual para o promoLink
+  try {
+    if (url) {
+      const urlObj = new URL(url);
+      const searchParams = urlObj.searchParams;
+      const promoUrl = new URL(promoLink);
+      
+      // Copiar todos os parâmetros que começam com "utm_"
+      searchParams.forEach((value, param) => {
+        if (param.startsWith('utm_')) {
+          promoUrl.searchParams.set(param, value);
+        }
+      });
+      
+      promoLink = promoUrl.toString();
+    }
+  } catch {
+    // Se houver erro, usar o promoLink original
+  }
 
   return (
     <div className="flex flex-col flex-auto items-center font-medium gap-2">
@@ -46,6 +68,7 @@ export default async function Page() {
         </div>
       </div>
       <ConfettiEffect />
+      <PixelV2 />
     </div>
   );
 
