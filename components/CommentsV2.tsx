@@ -1,7 +1,6 @@
 import { CommentsData } from '../libs/CommentsData';
 import React from 'react';
 import Image from 'next/image';
-import { ThumbsUp, ThumbsDown, MessageCircle, MoreHorizontal } from 'lucide-react';
 
 export default function CommentsV2() {
   return (
