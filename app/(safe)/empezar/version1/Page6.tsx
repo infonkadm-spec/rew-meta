@@ -71,7 +71,7 @@ export default function Page6() {
         
         {/* Channel Info */}
         <div className="flex items-center justify-between py-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <Image
               width="40"
               height="40"
@@ -89,7 +89,7 @@ export default function Page6() {
               src="/steps/instagram-verify.png"
               alt="Verified"
             />
-            <span className="text-xs font-medium text-white">Official Channel</span>
+            <span className="text-sm font-medium text-white">Official Channel</span>
           </div>
         </div>
       </div>
