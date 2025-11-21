@@ -13,13 +13,13 @@ const startBalance: Record<number, number> = {
 
 // SET COMPONENT DATA
 const endBalance: Record<number, number> = {
-  1: 39,
-  2: 39,
-  3: 97,
-  4: 155,
-  5: 213,
-  6: 213,
-  7: 213,
+  1: 34,
+  2: 34,
+  3: 71,
+  4: 125,
+  5: 180,
+  6: 180,
+  7: 180,
 };
 
 export default function Balance({

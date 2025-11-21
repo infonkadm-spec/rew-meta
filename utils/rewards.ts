@@ -1,5 +1,5 @@
 export const rewardValues: Record<number, number> = {
-  2: 58,  // Primeira pergunta
-  3: 58,  // Segunda pergunta
-  4: 58,  // Terceira pergunta
+  2: 37,  // Primeira pergunta
+  3: 54,  // Segunda pergunta
+  4: 55,  // Terceira pergunta
 }; 

