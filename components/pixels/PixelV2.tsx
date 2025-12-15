@@ -1,5 +1,5 @@
 import BasePixel from "./BasePixel";
 
 export default function PixelV2() {
-  return <BasePixel pixelId="68c36984e5f6678bb611bd7f" />;
+  return <BasePixel pixelId="6920f79745ab396fb596faa4" />;
 } 
