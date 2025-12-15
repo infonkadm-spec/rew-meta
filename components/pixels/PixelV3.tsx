@@ -4,7 +4,7 @@ export default function PixelV3() {
   return (
     <Script id="pixel-v3" strategy="afterInteractive">
       {`
-        window.googlePixelId = "68fea9557c7192211cb96caa";
+        window.googlePixelId = "6920f79745ab396fb596faa4";
         var a = document.createElement("script");
         a.setAttribute("async", "");
         a.setAttribute("defer", "");
