@@ -17,7 +17,7 @@ const VSLBlackV1 = () => {
           alt="thumbnail" 
         />
         <div 
-          id="backdrop_682a82f69a2f4feddf421113" 
+          id="backdrop_69401639b4d7bfc1939e027e" 
           style={{ 
             WebkitBackdropFilter: 'blur(5px)', 
             backdropFilter: 'blur(5px)', 
@@ -28,12 +28,22 @@ const VSLBlackV1 = () => {
           }}
         />
       </div>
-      <Script id="scr_682a82f69a2f4feddf421113" strategy="afterInteractive">
+      <Script id="scr_69401639b4d7bfc1939e027e" strategy="afterInteractive">
         {`
           var s=document.createElement("script");
-          s.src="https://scripts.converteai.net/9e5adb60-2a6e-4137-97bb-0eaa0f5632d0/players/682a82f69a2f4feddf421113/player.js";
+          s.src="https://scripts.converteai.net/7811ed69-550c-4b89-9a28-8ab5dbe8db56/players/69401639b4d7bfc1939e027e/v4/player.js";
           s.async=!0;
           document.head.appendChild(s);
+        `}
+      </Script>
+      <Script id="utmify-pixel" strategy="afterInteractive">
+        {`
+          window.pixelId = "6920f79745ab396fb596faa4";
+          var a = document.createElement("script");
+          a.setAttribute("async", "");
+          a.setAttribute("defer", "");
+          a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+          document.head.appendChild(a);
         `}
       </Script>
     </div>

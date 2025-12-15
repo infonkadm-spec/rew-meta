@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Script from "next/script";
 
-const VSLBlackV3 = () => {
+const VSLBlackAB = () => {
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (playerRef.current && !playerRef.current.querySelector("vturb-smartplayer")) {
       const el = document.createElement("vturb-smartplayer");
-      el.id = "vid-694016399eca4201e92566b9";
+      el.id = "ab-69401e34b50e82e7e2e3be0e";
       el.style.display = "block";
       el.style.margin = "0 auto";
       el.style.width = "100%";
@@ -19,26 +19,17 @@ const VSLBlackV3 = () => {
     <div className="w-full rounded-3xl overflow-hidden">
       <div ref={playerRef}></div>
 
-      <Script id="vturb-vid-694016399eca4201e92566b9" strategy="afterInteractive">
+      <Script id="vturb-ab-69401e34b50e82e7e2e3be0e" strategy="afterInteractive">
         {`
           var s = document.createElement("script");
-          s.src = "https://scripts.converteai.net/7811ed69-550c-4b89-9a28-8ab5dbe8db56/players/694016399eca4201e92566b9/v4/player.js";
+          s.src = "https://scripts.converteai.net/7811ed69-550c-4b89-9a28-8ab5dbe8db56/ab-test/69401e34b50e82e7e2e3be0e/player.js";
           s.async = true;
           document.head.appendChild(s);
-        `}
-      </Script>
-      <Script id="utmify-pixel" strategy="afterInteractive">
-        {`
-          window.pixelId = "6920f79745ab396fb596faa4";
-          var a = document.createElement("script");
-          a.setAttribute("async", "");
-          a.setAttribute("defer", "");
-          a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-          document.head.appendChild(a);
         `}
       </Script>
     </div>
   );
 };
 
-export default VSLBlackV3;
+export default VSLBlackAB;
+

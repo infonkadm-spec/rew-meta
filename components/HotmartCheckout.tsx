@@ -290,7 +290,7 @@ export default function HotmartCheckout({
                     left: 0 !important;
                     width: 100% !important;
                     height: 100% !important;
-                    background: #f3f4f6 !important;
+                    background: #ffffff !important;
                     z-index: 99999 !important;
                     display: flex !important;
                     align-items: center !important;
@@ -334,7 +334,7 @@ export default function HotmartCheckout({
                   left: 0 !important;
                   width: 100% !important;
                   height: 100% !important;
-                  background: #f3f4f6 !important;
+                  background: #ffffff !important;
                   z-index: 99999 !important;
                   display: flex !important;
                   align-items: center !important;
@@ -376,7 +376,7 @@ export default function HotmartCheckout({
                 left: 0 !important;
                 width: 100% !important;
                 height: 150px !important;
-                background: #f3f4f6 !important;
+                background: #ffffff !important;
                 z-index: 99999 !important;
                 pointer-events: none !important;
               `;
