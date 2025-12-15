@@ -17,11 +17,11 @@ export default async function Page() {
   const catValid = cks.get('cat_valid')?.value === '1';
 
   const promoLinks: Record<string, string> = {
-    "1": "https://pay.hotmart.com/M103047413I?off=rskh1e73",
-    "2": "https://pay.hotmart.com/M103047413I?off=rskh1e73",
-    "3": "https://pay.hotmart.com/M103047413I?off=rskh1e73",
+    "1": "https://pay.hotmart.com/M103047413I?off=fwtsd2mc",
+    "2": "https://pay.hotmart.com/M103047413I?off=fwtsd2mc",
+    "3": "https://pay.hotmart.com/M103047413I?off=fwtsd2mc",
   };
-  let promoLink = promoLinks[domainId] || "https://pay.hotmart.com/M103047413I?off=rskh1e73";
+  let promoLink = promoLinks[domainId] || "https://pay.hotmart.com/M103047413I?off=fwtsd2mc";
 
   // Repassar todos os parâmetros UTM da URL atual para o promoLink
   try {
