@@ -15,7 +15,7 @@ export default function Page3({
   useEffect(() => {
     if (playerRef.current && !playerRef.current.querySelector('vturb-smartplayer')) {
       const el = document.createElement('vturb-smartplayer');
-      el.id = 'vid-69401a1db4d7bfc1939e0841';
+      el.id = 'vid-69401a1db4d7bfc1939e0841'
       el.style.display = 'block';
       el.style.margin = '0 auto';
       el.style.width = '100%';

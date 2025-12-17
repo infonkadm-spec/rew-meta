@@ -6,7 +6,12 @@ export function detectAdSource(headers: Headers, url?: string): AdSource {
   const ref = (headers.get('referer') || '').toLowerCase();
   const xrw = (headers.get('x-requested-with') || '').toLowerCase();
 
-  const search = url ? new URL(url).searchParams : null;
+  let search: URLSearchParams | null = null;
+  try {
+    search = url ? new URL(url).searchParams : null;
+  } catch {
+    search = null;
+  }
 
   // ------ META (FB/IG) ------
   let metaScore = 0;
@@ -47,7 +52,7 @@ export function detectAdSource(headers: Headers, url?: string): AdSource {
     // opcional: você pode mapear alguns valores de gad_source via seus próprios logs
     (gadSource && /youtube/.test(gadSource)); // só se você padronizar nos seus templates
 
-  if (metaScore >= 2) return 'meta';
+  if (metaScore >= 1) return 'meta';
   if (gScore >= 2) return looksYoutube ? 'youtube' : 'google';
   return 'unknown';
 }
